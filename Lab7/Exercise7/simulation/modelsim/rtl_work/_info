@@ -1,0 +1,155 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab7\Exercise7\simulation\modelsim
+Enewsort
+Z1 w1621266574
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Quartus\DigitalDesignII(4202-4089)\Lab7\Exercise7\simulation\modelsim
+Z7 8E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSort.vhd
+Z8 FE:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSort.vhd
+l0
+L5
+VYADibB>SzVbJeNe]DnXn[0
+Z9 OV;C;10.1d;51
+33
+Z10 !s108 1621272578.616000
+Z11 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSort.vhd|
+Z12 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSort.vhd|
+Z13 o-2008 -work work -O0
+Z14 tExplicit 1
+!s100 N]`A=R?R4ZzVG:A?nQ2bf0
+!i10b 1
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 7 newsort 0 22 YADibB>SzVbJeNe]DnXn[0
+l37
+L15
+V8mz:;B`?c;h;IRj_Ub[9L2
+R9
+33
+R10
+R11
+R12
+R13
+R14
+!s100 [UL<dlQCk:ANze6LOWDZK3
+!i10b 1
+Enewsorter
+Z15 w1621267178
+R4
+R5
+R6
+Z16 8E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSorter.vhd
+Z17 FE:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSorter.vhd
+l0
+L24
+V[GGKBRfmW7O0<L6Q3CYU<0
+R9
+33
+Z18 !s108 1621272578.493000
+Z19 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSorter.vhd|
+Z20 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/newSorter.vhd|
+R13
+R14
+!s100 `2CB5JV;L@fb?QRb_N6<Q3
+!i10b 1
+Abdf_type
+R4
+R5
+DEx4 work 9 newsorter 0 22 [GGKBRfmW7O0<L6Q3CYU<0
+l68
+L37
+V?fza[5<Jn>2O21e2Z>4mT0
+R9
+33
+R18
+R19
+R20
+R13
+R14
+!s100 fUY2@9mK3EhlgH74[>>`k2
+!i10b 1
+Enewsorter_tb
+Z21 w1621272499
+R2
+R3
+Z22 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+R5
+R6
+Z23 8E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/simulation/modelsim/newsorter_tb.vhd
+Z24 FE:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/simulation/modelsim/newsorter_tb.vhd
+l0
+L7
+VZV?I[U8NTVKm]4J2fh1:T2
+!s100 bWkGNX=9R`eeS?kZoD1zU0
+R9
+33
+!i10b 1
+Z25 !s108 1621272578.683000
+Z26 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/simulation/modelsim/newsorter_tb.vhd|
+Z27 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/simulation/modelsim/newsorter_tb.vhd|
+R13
+R14
+Anewsorter_tb_arch
+R2
+R3
+R22
+R4
+R5
+DEx4 work 12 newsorter_tb 0 22 ZV?I[U8NTVKm]4J2fh1:T2
+l28
+L10
+VSHDfl]RIJ8P94f^YF0W>d0
+!s100 6gAcaN>Hz:k5V:o7zUGHo0
+R9
+33
+!i10b 1
+R25
+R26
+R27
+R13
+R14
+Eram256x8
+Z28 w1621265751
+R4
+R5
+R6
+Z29 8E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/RAM256x8.vhd
+Z30 FE:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/RAM256x8.vhd
+l0
+L42
+V06o:HaPFm8Gi;XXKd7JHA1
+R9
+33
+Z31 !s108 1621272578.553000
+Z32 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/RAM256x8.vhd|
+Z33 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab7/Exercise7/RAM256x8.vhd|
+R13
+R14
+!s100 iVjiP9@Q1dkWj9A0GBVI[2
+!i10b 1
+Asyn
+R4
+R5
+DEx4 work 8 ram256x8 0 22 06o:HaPFm8Gi;XXKd7JHA1
+l86
+L54
+VP6X]k60MDXCWP9X47_Q<E2
+R9
+33
+R31
+R32
+R33
+R13
+R14
+!s100 hEAhzn[eVmd?6KASS5nXl1
+!i10b 1

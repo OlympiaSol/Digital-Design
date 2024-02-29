@@ -1,0 +1,7 @@
+
+State Machine - |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state
+Name state.FINISH state.SHIFT state.ADD state.LOAD 
+state.LOAD 0 0 0 0 
+state.ADD 0 0 1 1 
+state.SHIFT 0 1 0 1 
+state.FINISH 1 0 0 1 

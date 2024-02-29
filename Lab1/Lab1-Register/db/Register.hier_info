@@ -1,0 +1,41 @@
+|REG4
+Q0 <= dff1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => dff1.CLK
+CLK => n4.CLK
+CLK => inst.CLK
+CLK => inst27.CLK
+S0 => a1.IN0
+S0 => -S1.IN0
+S0 => n2.IN0
+S0 => -S2.IN0
+S0 => n6.IN0
+S0 => -S3.IN0
+S0 => n9.IN0
+S0 => -S4.IN0
+S0 => inst36.IN0
+S0 => inst35.IN0
+S0 => inst12.IN0
+S0 => inst8.IN0
+S1 => a1.IN1
+S1 => inst9.IN1
+S1 => n2.IN1
+S1 => inst13.IN1
+S1 => n6.IN1
+S1 => inst17.IN1
+S1 => n9.IN1
+S1 => inst20.IN1
+S1 => inst26.IN0
+S1 => n7.IN0
+S1 => n3.IN0
+S1 => inst32.IN0
+I3 => inst20.IN2
+I3 => inst21.IN2
+I2 => inst18.IN2
+I1 => inst14.IN2
+I0 => inst10.IN2
+I0 => inst8.IN2
+Q1 <= n4.DB_MAX_OUTPUT_PORT_TYPE
+Q2 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+
+

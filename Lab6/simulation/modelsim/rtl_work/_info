@@ -1,0 +1,221 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab6\simulation\modelsim
+Eadder
+Z1 w1619359616
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Quartus\DigitalDesignII(4202-4089)\Lab6\simulation\modelsim
+Z7 8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd
+Z8 FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd
+l0
+L5
+V3gfeg7h;dN9ASZk:<4WLa3
+Z9 OV;C;10.1d;51
+33
+Z10 !s108 1620987903.787000
+Z11 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd|
+Z12 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd|
+Z13 o-2008 -work work -O0
+Z14 tExplicit 1
+!s100 A8GQ<1G7UfJEYPN`TUYJ91
+!i10b 1
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 3gfeg7h;dN9ASZk:<4WLa3
+l14
+L12
+VOV8V6zcFF4D_0D13:z90F2
+R9
+33
+R10
+R11
+R12
+R13
+R14
+!s100 eiF2Zo[=J]2eb5HN_=TDm3
+!i10b 1
+Ectrllogicp
+Z15 w1619705530
+Z16 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
+R2
+R3
+R4
+R5
+R6
+Z17 8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vhd
+Z18 FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vhd
+l0
+L6
+VD;7fL9<@Xoa<PPK7>=b2l3
+R9
+33
+Z19 !s108 1620987903.969000
+Z20 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vhd|
+Z21 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vhd|
+R13
+R14
+!s100 HLARJP_4Q8PPO?chR0MkE2
+!i10b 1
+Abehav
+R16
+R2
+R3
+R4
+R5
+DEx4 work 10 ctrllogicp 0 22 D;7fL9<@Xoa<PPK7>=b2l3
+l17
+L13
+V@>Q;OzT4l^No@Q7YKYe7W2
+R9
+33
+R19
+R20
+R21
+R13
+R14
+!s100 7gJCBnjOgIVh1:6W?EjUa3
+!i10b 1
+Pdeclarations
+R4
+R5
+w1619624998
+R6
+8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd
+FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd
+l0
+L3
+V2:C8ki0d@:@hbAm:4G<k12
+R9
+33
+R13
+R14
+!s100 ;UaEOhhdi9X9Uj9Ym4oVi3
+!i10b 1
+!s108 1620987903.914000
+!s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd|
+!s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd|
+Emultiplierp
+Z22 w1619706091
+R2
+R3
+R4
+R5
+R6
+Z23 8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vhd
+Z24 FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vhd
+l0
+L5
+V0>a85U=jQBmgaLE_F:1oA1
+R9
+33
+Z25 !s108 1620987903.850000
+Z26 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vhd|
+Z27 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vhd|
+R13
+R14
+!s100 I0CB^oRJcf7:n:9Bk[6?A2
+!i10b 1
+Astruct
+R2
+R3
+R4
+R5
+DEx4 work 11 multiplierp 0 22 0>a85U=jQBmgaLE_F:1oA1
+l35
+L11
+V]WHXMWl<4i`;zG6W65Jj:0
+R9
+33
+R25
+R26
+R27
+R13
+R14
+!s100 YQ>U<A_l]Ab0DL>02kbk<1
+!i10b 1
+Emultiplierp_tb
+Z28 w1619707089
+R16
+R2
+R3
+Z29 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+R5
+R6
+Z30 8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/MultiplierP_tb.vhd
+Z31 FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/MultiplierP_tb.vhd
+l0
+L10
+V]AK<k6W96dk=Yd4?f4h2=2
+!s100 0H>DSGUVjK^5BmgnZYX100
+R9
+33
+!i10b 1
+Z32 !s108 1620987904.035000
+Z33 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/MultiplierP_tb.vhd|
+Z34 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/MultiplierP_tb.vhd|
+R13
+R14
+Amultiplierp_tb_arch
+R16
+R2
+R3
+R29
+R4
+R5
+DEx4 work 14 multiplierp_tb 0 22 ]AK<k6W96dk=Yd4?f4h2=2
+l41
+L15
+Vg4fPajaUjXW0hdZ]>7FWC1
+!s100 =ghgH4]DTE9F^>SYHkQON0
+R9
+33
+!i10b 1
+R32
+R33
+R34
+R13
+R14
+Ereg
+Z35 w1619359391
+R4
+R5
+R6
+Z36 8E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd
+Z37 FE:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd
+l0
+L4
+VXE8=hKH1Sz2gINl1kCZkU1
+R9
+33
+Z38 !s108 1620987903.722000
+Z39 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd|
+Z40 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd|
+R13
+R14
+!s100 7=QZLAjV4;2OT;lZ5Hnb62
+!i10b 1
+Abehav
+R4
+R5
+DEx4 work 3 reg 0 22 XE8=hKH1Sz2gINl1kCZkU1
+l14
+L12
+Vb`PKAEfLMJYEU5XCOOSaW3
+R9
+33
+R38
+R39
+R40
+R13
+R14
+!s100 hn;f<7T:R3Rg0`?Q[Jo@U2
+!i10b 1

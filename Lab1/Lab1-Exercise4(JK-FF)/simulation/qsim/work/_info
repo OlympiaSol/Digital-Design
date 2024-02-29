@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1-Exercise4(JK-FF)\simulation\qsim
+vJK_FF
+Z1 !s100 d[6ESGQhER7hd<m<3B5aK0
+Z2 IKVU@3CS_UXQ7h^4cER7nV0
+Z3 VUNo;IA77;AAE8H?kEIAm=2
+Z4 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1-Exercise4(JK-FF)\simulation\qsim
+Z5 w1615414575
+Z6 8JK_FF.vo
+Z7 FJK_FF.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|JK_FF.vo|
+Z10 o-work work -O0
+Z11 n@j@k_@f@f
+!i10b 1
+!s85 0
+Z12 !s108 1615414576.042000
+Z13 !s107 JK_FF.vo|
+!s101 -O0
+vJK_FF_vlg_check_tst
+!i10b 1
+!s100 W545nFzl1JB4nlFi]XTae3
+I8M4I@B1;O2]k3BZhXWhT61
+Z14 VihH]GXGhizLYQIFWP;TH?0
+R4
+Z15 w1615414574
+Z16 8JK_FF.vt
+Z17 FJK_FF.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z18 !s108 1615414576.159000
+Z19 !s107 JK_FF.vt|
+Z20 !s90 -work|work|JK_FF.vt|
+!s101 -O0
+R10
+Z21 n@j@k_@f@f_vlg_check_tst
+vJK_FF_vlg_sample_tst
+!i10b 1
+Z22 !s100 c15QOV[>FUSBQ^fmVkaea0
+Z23 IX4Ne1A=YR9bCBEXEm54Zd2
+Z24 VJQ6m4CHaU;?6BE]XYdZFG3
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z25 n@j@k_@f@f_vlg_sample_tst
+vJK_FF_vlg_vec_tst
+!i10b 1
+!s100 1U2ZKFaX=^hW@<8aI9=Cf3
+I7SzSPNbCE?]jOdEzTN;<81
+Z26 V:]dBE8bK@igKim3OWM0Wi3
+R4
+R15
+R16
+R17
+Z27 L0 160
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z28 n@j@k_@f@f_vlg_vec_tst

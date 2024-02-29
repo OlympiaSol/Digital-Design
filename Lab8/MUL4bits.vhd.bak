@@ -1,0 +1,61 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY MUL4bits IS
+    PORT ( A, B : IN std_logic_vector(4 downto 0);
+              P : OUT std_logic_vector(9 downto 0) );
+END MUL4bits;
+
+ARCHITECTURE arch OF MUL5bits IS
+    SIGNAL AiBj : std_logic_vector(24 downto 0);
+    SIGNAL S, C : std_logic_vector(19 downto 0);
+
+    COMPONENT HA1bit
+        PORT ( A, B : IN std_logic;
+            S, Cout : OUT std_logic );
+    END COMPONENT;
+
+    COMPONENT FA1bit
+        PORT ( A, B, Cin : IN std_logic;
+                 S, Cout : OUT std_logic );
+    END COMPONENT;
+
+    BEGIN
+        -- παραμετρική δήλωση των γινομένων AiBj ως σήματα
+        PROCESS (A, B)    -- υπολογισμός μόνο αν υπάρχουν αλλαγές στα A και B
+            BEGIN
+                FOR j IN 0 TO 4 LOOP    -- j η γραμμή adder
+                    FOR i IN 0 TO 4 LOOP    -- i η στήλη adder
+                        AiBj(5*j+i) <= A(i) AND B(j);
+                    END LOOP;
+                END LOOP;
+        END PROCESS;
+
+        -- δημιουργία αθροιστών HAs και FAs παραμετρικά
+        P(0) <= AiBj(0);
+        FIRSTROWs: FOR i IN 0 TO 3 GENERATE
+            -- οι HAs της πρώτης γραμμής του σχήματος
+            HAi0: HA1bit PORT MAP ( AiBj(5*0+i+1), AiBj(5*(0+1)+i), S(4*0+i), C(4*0+i) );
+            LEFTFAs: IF i = 3 GENERATE    -- για τους αριστερότερους FAs της γραμμής j
+                LEFTGEN: FOR j IN 1 TO 3 GENERATE
+                    FA3j: FA1bit PORT MAP ( AiBj(5*j+i+1), AiBj(5*(j+1)+i), C(4*(j-1)+i), S(4*j+i), C(4*j+i) );
+                END GENERATE LEFTGEN;
+            END GENERATE LEFTFAs;
+            RIGHTFAs: IF i < 3 GENERATE    -- για όλους τους υπόλοιπους FAs της γραμμής j
+                RIGHTGEN: FOR j IN 1 TO 3 GENERATE
+                    FAij: FA1bit PORT MAP ( S(4*(j-1)+i+1), AiBj(5*(j+1)+i), C(4*(j-1)+i), S(4*j+i), C(4*j+i) );
+                END GENERATE RIGHTGEN;
+            END GENERATE RIGHTFAs;
+            P(i+1) <= S(4*i+0);
+        END GENERATE;
+
+        -- η τελευταία γραμμή adders δεν παραμετροποιείται εύκολα λόγω μεγάλης ανομοιομορφίας
+        HA04: HA1bit PORT MAP ( S(4*(4-1)+0+1), C(4*(4-1)+0), S(4*4+0), C(4*4+0) );  P(4+1+0) <= S(4*4+0);
+        LASTROW: FOR i IN 1 TO 2 GENERATE
+            FAi4: FA1bit PORT MAP ( S(4*(4-1)+i+1), C(4*(4-1)+i), C(4*4+i-1), S(4*4+i), C(4*4+i) );
+            P(4+1+i) <= S(4*4+i);
+        END GENERATE;
+        FA34: FA1bit PORT MAP ( AiBj(5*4+3+1), C(4*(4-1)+3), C(4*4+3-1), S(4*4+3), C(4*4+3) );  P(4+1+3) <= S(4*4+3);
+        P(4+1+4) <= C(4*4+4-1);
+
+END arch;

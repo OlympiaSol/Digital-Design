@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Intro/Intro.bdf
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Intro/Waveform.vwf
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Intro/db/Intro.cbx.xml
+design_name = Intro
+instance = comp, \PB2~I , PB2, Intro, 1
+instance = comp, \PB1~I , PB1, Intro, 1
+instance = comp, \LED~I , LED, Intro, 1

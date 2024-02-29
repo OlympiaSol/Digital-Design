@@ -1,0 +1,522 @@
+Simulator report for Lab8
+Mon May 31 19:31:45 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 60.0 us      ;
+; Simulation Netlist Size     ; 317 nodes    ;
+; Simulation Coverage         ;      88.75 % ;
+; Total Number of Transitions ; 95138        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                               ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                             ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                          ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                 ;               ;
+; Vector input source                                                                        ; E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                  ; On            ;
+; Check outputs                                                                              ; Off                                                 ; Off           ;
+; Report simulation coverage                                                                 ; On                                                  ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                  ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                  ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                  ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                 ; Off           ;
+; Detect glitches                                                                            ; Off                                                 ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                 ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                 ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                 ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                 ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                  ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                          ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                 ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++---------------------------------------------------------------------------------------------------------+
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ALTSYNCRAM ;
++---------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      88.75 % ;
+; Total nodes checked                                 ; 317          ;
+; Total output ports checked                          ; 320          ;
+; Total output ports with complete 1/0-value coverage ; 284          ;
+; Total output ports with no 1/0-value coverage       ; 29           ;
+; Total output ports with no 1-value coverage         ; 30           ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                        ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |Lab8|SYNTHESIZED_WIRE_4                                                                                  ; |Lab8|SYNTHESIZED_WIRE_4                                                                            ; out0             ;
+; |Lab8|clck                                                                                                ; |Lab8|clck                                                                                          ; out              ;
+; |Lab8|enACC                                                                                               ; |Lab8|enACC                                                                                         ; pin_out          ;
+; |Lab8|rsMUL                                                                                               ; |Lab8|rsMUL                                                                                         ; pin_out          ;
+; |Lab8|A[0]                                                                                                ; |Lab8|A[0]                                                                                          ; pin_out          ;
+; |Lab8|A[1]                                                                                                ; |Lab8|A[1]                                                                                          ; pin_out          ;
+; |Lab8|A[2]                                                                                                ; |Lab8|A[2]                                                                                          ; pin_out          ;
+; |Lab8|A[3]                                                                                                ; |Lab8|A[3]                                                                                          ; pin_out          ;
+; |Lab8|addrA[0]                                                                                            ; |Lab8|addrA[0]                                                                                      ; pin_out          ;
+; |Lab8|addrA[1]                                                                                            ; |Lab8|addrA[1]                                                                                      ; pin_out          ;
+; |Lab8|addrA[2]                                                                                            ; |Lab8|addrA[2]                                                                                      ; pin_out          ;
+; |Lab8|addrA[3]                                                                                            ; |Lab8|addrA[3]                                                                                      ; pin_out          ;
+; |Lab8|addrA[4]                                                                                            ; |Lab8|addrA[4]                                                                                      ; pin_out          ;
+; |Lab8|addrA[5]                                                                                            ; |Lab8|addrA[5]                                                                                      ; pin_out          ;
+; |Lab8|addrB[0]                                                                                            ; |Lab8|addrB[0]                                                                                      ; pin_out          ;
+; |Lab8|addrB[1]                                                                                            ; |Lab8|addrB[1]                                                                                      ; pin_out          ;
+; |Lab8|addrB[2]                                                                                            ; |Lab8|addrB[2]                                                                                      ; pin_out          ;
+; |Lab8|addrB[3]                                                                                            ; |Lab8|addrB[3]                                                                                      ; pin_out          ;
+; |Lab8|addrB[4]                                                                                            ; |Lab8|addrB[4]                                                                                      ; pin_out          ;
+; |Lab8|addrB[5]                                                                                            ; |Lab8|addrB[5]                                                                                      ; pin_out          ;
+; |Lab8|B[0]                                                                                                ; |Lab8|B[0]                                                                                          ; pin_out          ;
+; |Lab8|B[1]                                                                                                ; |Lab8|B[1]                                                                                          ; pin_out          ;
+; |Lab8|B[2]                                                                                                ; |Lab8|B[2]                                                                                          ; pin_out          ;
+; |Lab8|B[3]                                                                                                ; |Lab8|B[3]                                                                                          ; pin_out          ;
+; |Lab8|OUTP[1]                                                                                             ; |Lab8|OUTP[1]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[2]                                                                                             ; |Lab8|OUTP[2]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[3]                                                                                             ; |Lab8|OUTP[3]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[4]                                                                                             ; |Lab8|OUTP[4]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[5]                                                                                             ; |Lab8|OUTP[5]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[6]                                                                                             ; |Lab8|OUTP[6]                                                                                       ; pin_out          ;
+; |Lab8|OUTP[7]                                                                                             ; |Lab8|OUTP[7]                                                                                       ; pin_out          ;
+; |Lab8|Result[1]                                                                                           ; |Lab8|Result[1]                                                                                     ; pin_out          ;
+; |Lab8|Result[2]                                                                                           ; |Lab8|Result[2]                                                                                     ; pin_out          ;
+; |Lab8|Result[3]                                                                                           ; |Lab8|Result[3]                                                                                     ; pin_out          ;
+; |Lab8|Result[4]                                                                                           ; |Lab8|Result[4]                                                                                     ; pin_out          ;
+; |Lab8|Result[5]                                                                                           ; |Lab8|Result[5]                                                                                     ; pin_out          ;
+; |Lab8|Result[6]                                                                                           ; |Lab8|Result[6]                                                                                     ; pin_out          ;
+; |Lab8|Result[7]                                                                                           ; |Lab8|Result[7]                                                                                     ; pin_out          ;
+; |Lab8|Result[8]                                                                                           ; |Lab8|Result[8]                                                                                     ; pin_out          ;
+; |Lab8|Result[9]                                                                                           ; |Lab8|Result[9]                                                                                     ; pin_out          ;
+; |Lab8|Result[10]                                                                                          ; |Lab8|Result[10]                                                                                    ; pin_out          ;
+; |Lab8|Result[11]                                                                                          ; |Lab8|Result[11]                                                                                    ; pin_out          ;
+; |Lab8|ControlUnit:b2v_inst3|addr[0]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[0]                                                                 ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|counter~1                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~1                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~2                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~2                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~3                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~3                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~0                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~0                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~1                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~1                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~2                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~2                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~3                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~3                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~4                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~4                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~5                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~5                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~6                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~6                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|rstMUL~0                                                                      ; |Lab8|ControlUnit:b2v_inst3|rstMUL~0                                                                ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|rstMUL~1                                                                      ; |Lab8|ControlUnit:b2v_inst3|rstMUL~1                                                                ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|rstMUL~2                                                                      ; |Lab8|ControlUnit:b2v_inst3|rstMUL~2                                                                ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~4                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~4                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~5                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~5                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~6                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~6                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~7                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~7                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~8                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~8                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~9                                                                     ; |Lab8|ControlUnit:b2v_inst3|counter~9                                                               ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~10                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~10                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~11                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~11                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~12                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~12                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~13                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~13                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~14                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~14                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|counter~15                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter~15                                                              ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|enaACC~0                                                                      ; |Lab8|ControlUnit:b2v_inst3|enaACC~0                                                                ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|enaACC~1                                                                      ; |Lab8|ControlUnit:b2v_inst3|enaACC~1                                                                ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~7                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~7                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~8                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~8                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~9                                                                        ; |Lab8|ControlUnit:b2v_inst3|addr~9                                                                  ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~10                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~10                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~11                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~11                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~12                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~12                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~13                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~13                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~14                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~14                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~15                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~15                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~16                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~16                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~17                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~17                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~18                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~18                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~19                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~19                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~20                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~20                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~21                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~21                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~22                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~22                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~23                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~23                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~24                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~24                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~25                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~25                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~26                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~26                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr~27                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr~27                                                                 ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|enaACC                                                                        ; |Lab8|ControlUnit:b2v_inst3|enaACC                                                                  ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|rstMUL                                                                        ; |Lab8|ControlUnit:b2v_inst3|rstMUL                                                                  ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|counter[3]                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter[3]                                                              ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|counter[2]                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter[2]                                                              ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|counter[1]                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter[1]                                                              ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|counter[0]                                                                    ; |Lab8|ControlUnit:b2v_inst3|counter[0]                                                              ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|addr[5]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[5]                                                                 ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|addr[4]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[4]                                                                 ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|addr[3]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[3]                                                                 ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|addr[2]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[2]                                                                 ; regout           ;
+; |Lab8|ControlUnit:b2v_inst3|addr[1]                                                                       ; |Lab8|ControlUnit:b2v_inst3|addr[1]                                                                 ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|comb~0                                                                        ; |Lab8|MultiplierP:b2v_inst2|comb~0                                                                  ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|comb~1                                                                        ; |Lab8|MultiplierP:b2v_inst2|comb~1                                                                  ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|comb~2                                                                        ; |Lab8|MultiplierP:b2v_inst2|comb~2                                                                  ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|comb~3                                                                        ; |Lab8|MultiplierP:b2v_inst2|comb~3                                                                  ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[3]                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[3]                                               ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[2]                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[2]                                               ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[1]                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[1]                                               ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD                                                   ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD                                             ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.ADD                                                    ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.ADD                                              ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.SHIFT                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.SHIFT                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_B                                                         ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_B                                                   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_H                                                         ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_H                                                   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.FINISH                                                 ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.FINISH                                           ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~2                                                      ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~2                                                ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~3                                                      ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~3                                                ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_A                                                         ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_A                                                   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_C                                                         ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|EN_C                                                   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|SL_L                                                         ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|SL_L                                                   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~7                                                      ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~7                                                ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~11                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~11                                               ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~15                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~15                                               ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~0                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~0                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~1                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~1                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~2                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~2                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~3                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F~3                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[3]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[3]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[2]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[2]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[1]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[1]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~0                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~0                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~1                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~1                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~2                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~2                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~3                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F~3                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[3]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[3]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[2]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[2]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[1]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[1]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[0]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_H|F[0]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_C|F[0]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_C|F[0]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~0                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~0                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~1                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~1                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~2                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~2                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~3                                                                   ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F~3                                                             ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[3]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[3]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[2]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[2]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[1]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[1]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[0]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_B|F[0]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[3]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[3]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[2]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[2]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[1]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[1]                                                            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[0]                                                                  ; |Lab8|MultiplierP:b2v_inst2|Reg:R_A|F[0]                                                            ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst17|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst17|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst17|inst1                                               ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst17|inst1                                         ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst12|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst12|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst12|inst1                                               ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst12|inst1                                         ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst13|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst13|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst13|inst1                                               ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst13|inst1                                         ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst10|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst10|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst10|inst1                                               ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst10|inst1                                         ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst11|inst                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst11|inst                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst11|inst1                                               ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst11|inst1                                         ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst7|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst6|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst5|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst4|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst3|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst3                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst3                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst4                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst4                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst2|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst5                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst5                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst2                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst2                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst1                                                ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst1                                          ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst                                                 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst                                           ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[11]                                                         ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[11]                                                   ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[10]                                                         ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[10]                                                   ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[9]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[9]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[8]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[8]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[7]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[7]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[6]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[6]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[5]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[5]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[4]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[4]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[3]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[3]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[2]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[2]                                                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[1]                                                          ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[1]                                                    ; regout           ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a0 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_a[0] ; portadataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a0 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_b[0] ; portbdataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a1 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_a[1] ; portadataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a1 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_b[1] ; portbdataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a2 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_a[2] ; portadataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a2 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_b[2] ; portbdataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a3 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_a[3] ; portadataout0    ;
+; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|ram_block1a3 ; |Lab8|ram2ports4x256:b2v_inst|altsyncram:altsyncram_component|altsyncram_dg92:auto_generated|q_b[3] ; portbdataout0    ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~2                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~2                                            ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~4                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~4                                            ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~0                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~0                                            ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector2~0                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector2~0                                            ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector2~1                                                  ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector2~1                                            ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan0~0                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan0~0                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan0~1                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan0~1                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan0~2                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan0~2                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~0                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~0                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~1                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~1                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~2                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~2                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~3                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~3                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~4                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~4                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~5                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~5                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~6                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~6                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~7                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~7                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~8                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~8                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~9                                                                   ; |Lab8|ControlUnit:b2v_inst3|LessThan1~9                                                             ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~10                                                                  ; |Lab8|ControlUnit:b2v_inst3|LessThan1~10                                                            ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|LessThan1~11                                                                  ; |Lab8|ControlUnit:b2v_inst3|LessThan1~11                                                            ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~0                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~0                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~1                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~1                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~2                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~2                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~3                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~3                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~4                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~4                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~5                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~5                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~6                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~6                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~7                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~7                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~8                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~8                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~9                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add0~9                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add0~10                                                                       ; |Lab8|ControlUnit:b2v_inst3|Add0~10                                                                 ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add1~0                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add1~0                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add1~1                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add1~1                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add1~2                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add1~2                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add1~3                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add1~3                                                                  ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Add1~4                                                                        ; |Lab8|ControlUnit:b2v_inst3|Add1~4                                                                  ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~0                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~0                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~1                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~1                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~2                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~2                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~3                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~3                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~4                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~4                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~5                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~5                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~6                                                       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Add0~6                                                 ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~0                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~0                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~1                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~1                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~2                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~2                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~3                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~3                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~4                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~4                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~5                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~5                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~6                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~6                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~7                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~7                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~8                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~8                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~9                                                            ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~9                                                      ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~10                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~10                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~11                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~11                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~12                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~12                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~13                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~13                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~14                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~14                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~15                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~15                                                     ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~16                                                           ; |Lab8|MultiplierP:b2v_inst2|Adder:U_ADD|Add0~16                                                     ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Equal0~0                                                                      ; |Lab8|ControlUnit:b2v_inst3|Equal0~0                                                                ; out0             ;
+; |Lab8|ControlUnit:b2v_inst3|Equal1~0                                                                      ; |Lab8|ControlUnit:b2v_inst3|Equal1~0                                                                ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Equal0~0                                                     ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Equal0~0                                               ; out0             ;
++-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |Lab8|rest                                                  ; |Lab8|rest                                                  ; out              ;
+; |Lab8|gnd[0]                                                ; |Lab8|gnd[0]                                                ; out              ;
+; |Lab8|gnd[1]                                                ; |Lab8|gnd[1]                                                ; out              ;
+; |Lab8|gnd[2]                                                ; |Lab8|gnd[2]                                                ; out              ;
+; |Lab8|gnd[3]                                                ; |Lab8|gnd[3]                                                ; out              ;
+; |Lab8|addrA[7]                                              ; |Lab8|addrA[7]                                              ; pin_out          ;
+; |Lab8|addrB[7]                                              ; |Lab8|addrB[7]                                              ; pin_out          ;
+; |Lab8|OUTP[0]                                               ; |Lab8|OUTP[0]                                               ; pin_out          ;
+; |Lab8|Result[0]                                             ; |Lab8|Result[0]                                             ; pin_out          ;
+; |Lab8|Result[13]                                            ; |Lab8|Result[13]                                            ; pin_out          ;
+; |Lab8|Result[14]                                            ; |Lab8|Result[14]                                            ; pin_out          ;
+; |Lab8|Result[15]                                            ; |Lab8|Result[15]                                            ; pin_out          ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[4]       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[4]       ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~0        ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~0        ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD~0   ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD~0   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[0]                    ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[0]                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst14|inst  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst14|inst  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst1 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst1 ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst1 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst1 ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst3  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst3  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst4  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst4  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst2   ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst2   ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst    ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst    ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[15]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[15]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[14]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[14]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[13]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[13]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[0]            ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[0]            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~3    ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~3    ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~1    ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~1    ; out0             ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                     ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; Node Name                                                   ; Output Port Name                                            ; Output Port Type ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+; |Lab8|gnd[0]                                                ; |Lab8|gnd[0]                                                ; out              ;
+; |Lab8|gnd[1]                                                ; |Lab8|gnd[1]                                                ; out              ;
+; |Lab8|gnd[2]                                                ; |Lab8|gnd[2]                                                ; out              ;
+; |Lab8|gnd[3]                                                ; |Lab8|gnd[3]                                                ; out              ;
+; |Lab8|addrA[6]                                              ; |Lab8|addrA[6]                                              ; pin_out          ;
+; |Lab8|addrA[7]                                              ; |Lab8|addrA[7]                                              ; pin_out          ;
+; |Lab8|addrB[6]                                              ; |Lab8|addrB[6]                                              ; pin_out          ;
+; |Lab8|addrB[7]                                              ; |Lab8|addrB[7]                                              ; pin_out          ;
+; |Lab8|OUTP[0]                                               ; |Lab8|OUTP[0]                                               ; pin_out          ;
+; |Lab8|Result[0]                                             ; |Lab8|Result[0]                                             ; pin_out          ;
+; |Lab8|Result[12]                                            ; |Lab8|Result[12]                                            ; pin_out          ;
+; |Lab8|Result[13]                                            ; |Lab8|Result[13]                                            ; pin_out          ;
+; |Lab8|Result[14]                                            ; |Lab8|Result[14]                                            ; pin_out          ;
+; |Lab8|Result[15]                                            ; |Lab8|Result[15]                                            ; pin_out          ;
+; |Lab8|ControlUnit:b2v_inst3|counter~0                       ; |Lab8|ControlUnit:b2v_inst3|counter~0                       ; out              ;
+; |Lab8|ControlUnit:b2v_inst3|addr[6]                         ; |Lab8|ControlUnit:b2v_inst3|addr[6]                         ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[4]       ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|count[4]       ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~0        ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state~0        ; out              ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD~0   ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|state.LOAD~0   ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[0]                    ; |Lab8|MultiplierP:b2v_inst2|Reg:R_L|F[0]                    ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst14|inst  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst14|inst  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst1 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst15|inst1 ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst1 ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|HA:inst16|inst1 ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst3  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst3  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst4  ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst1|inst4  ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst2   ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst2   ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst    ; |Lab8|Accumulator:b2v_inst1|16bitAdder:inst|FA:inst|inst    ; out0             ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[15]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[15]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[14]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[14]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[13]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[13]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[12]           ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[12]           ; regout           ;
+; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[0]            ; |Lab8|Accumulator:b2v_inst1|lpm_ff:inst1|dffs[0]            ; regout           ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~3    ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector0~3    ; out0             ;
+; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~1    ; |Lab8|MultiplierP:b2v_inst2|CtrlLogicP:U_CTL|Selector1~1    ; out0             ;
++-------------------------------------------------------------+-------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon May 31 19:31:44 2021
+Info: Command: quartus_sim --simulation_results_format=VWF Lab8 -c Lab8
+Info (324025): Using vector source file "E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vwf"
+Warning (328012): Can't find signal in vector source file for input pin "|Lab8|gnd[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|Lab8|gnd[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|Lab8|gnd[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|Lab8|gnd[3]"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      88.75 %
+Info (328052): Number of transitions in simulation is 95138
+Info (324045): Vector file Lab8.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4440 megabytes
+    Info: Processing ended: Mon May 31 19:31:45 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

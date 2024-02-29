@@ -1,0 +1,85 @@
+|8BitCounter
+HEX7[0] <= SEG7_LUT:inst3.oSEG[0]
+HEX7[1] <= SEG7_LUT:inst3.oSEG[1]
+HEX7[2] <= SEG7_LUT:inst3.oSEG[2]
+HEX7[3] <= SEG7_LUT:inst3.oSEG[3]
+HEX7[4] <= SEG7_LUT:inst3.oSEG[4]
+HEX7[5] <= SEG7_LUT:inst3.oSEG[5]
+HEX7[6] <= SEG7_LUT:inst3.oSEG[6]
+Q1[0] <= Counter8Bit:inst.Q[0]
+Q1[1] <= Counter8Bit:inst.Q[1]
+Q1[2] <= Counter8Bit:inst.Q[2]
+Q1[3] <= Counter8Bit:inst.Q[3]
+Q1[4] <= Counter8Bit:inst.Q[4]
+Q1[5] <= Counter8Bit:inst.Q[5]
+Q1[6] <= Counter8Bit:inst.Q[6]
+Q1[7] <= Counter8Bit:inst.Q[7]
+SET => Counter8Bit:inst.SET
+CLK => Counter8Bit:inst.CLK
+CLR => Counter8Bit:inst.CLR
+HEX8[0] <= SEG7_LUT:inst4.oSEG[0]
+HEX8[1] <= SEG7_LUT:inst4.oSEG[1]
+HEX8[2] <= SEG7_LUT:inst4.oSEG[2]
+HEX8[3] <= SEG7_LUT:inst4.oSEG[3]
+HEX8[4] <= SEG7_LUT:inst4.oSEG[4]
+HEX8[5] <= SEG7_LUT:inst4.oSEG[5]
+HEX8[6] <= SEG7_LUT:inst4.oSEG[6]
+
+
+|8BitCounter|SEG7_LUT:inst3
+oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+
+
+|8BitCounter|Counter8Bit:inst
+SET => output[7].IN0
+CLK => output[0].CLK
+CLK => output[1].CLK
+CLK => output[2].CLK
+CLK => output[3].CLK
+CLK => output[4].CLK
+CLK => output[5].CLK
+CLK => output[6].CLK
+CLK => output[7].CLK
+CLR => output[0].ACLR
+CLR => output[1].ACLR
+CLR => output[2].ACLR
+CLR => output[3].ACLR
+CLR => output[4].ACLR
+CLR => output[5].ACLR
+CLR => output[6].ACLR
+CLR => output[7].ACLR
+CLR => output[7].IN1
+Q[0] <= output[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= output[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= output[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= output[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= output[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= output[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= output[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= output[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|8BitCounter|SEG7_LUT:inst4
+oSEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+oSEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+iDIG[0] => Decoder0.IN3
+iDIG[1] => Decoder0.IN2
+iDIG[2] => Decoder0.IN1
+iDIG[3] => Decoder0.IN0
+
+

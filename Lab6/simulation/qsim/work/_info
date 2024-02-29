@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab6\simulation\qsim
+vCtrlLogic
+Z1 I<lMFlnP8?bL?^D`5P?1hJ3
+Z2 V>0]CRAFPY?M?@88HmnFST0
+Z3 dE:\Quartus\DigitalDesignII(4202-4089)\Lab6\simulation\qsim
+Z4 w1619626032
+Z5 8Lab6.vo
+Z6 FLab6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@ctrl@logic
+Z10 !s100 X=Ld^XY]g8R9BnChNbNL>2
+Z11 !s108 1619626032.717000
+Z12 !s107 Lab6.vo|
+Z13 !s90 -work|work|Lab6.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vCtrlLogic_vlg_check_tst
+Z14 I`m@9Hdnc19YUMRV4dfUSE0
+Z15 VG[oJPE3O61jK_`l:MZjQ@2
+R3
+Z16 w1619626031
+Z17 8Lab6.vt
+Z18 FLab6.vt
+L0 59
+R7
+r1
+31
+Z19 !s108 1619626032.813000
+Z20 !s107 Lab6.vt|
+Z21 !s90 -work|work|Lab6.vt|
+R8
+Z22 n@ctrl@logic_vlg_check_tst
+Z23 !s100 JF@CQRjC9XSn7IhABAdDi3
+!i10b 1
+!s85 0
+!s101 -O0
+vCtrlLogic_vlg_sample_tst
+Z24 ISP_V0]jERf=mJY77>PVBZ2
+Z25 V<d:kQkRH8Aj9MD=[M=ZMD2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z26 n@ctrl@logic_vlg_sample_tst
+Z27 !s100 d;GTI5IfncQi;<YGh^9XP0
+!i10b 1
+!s85 0
+!s101 -O0
+vCtrlLogic_vlg_vec_tst
+Z28 I48g]Z;la?10JLM^J_zd3R2
+Z29 VzYU33JCB@mlGn<llV0kKM0
+R3
+R16
+R17
+R18
+Z30 L0 397
+R7
+r1
+31
+R19
+R20
+R21
+R8
+Z31 n@ctrl@logic_vlg_vec_tst
+Z32 !s100 KgBI5;RAbgI5XVI0^a>D80
+!i10b 1
+!s85 0
+!s101 -O0
+vMultiplierP
+Z33 IfEN3ChEdkKHK=^=VLzheN0
+Z34 VzNe2>CS?1P]Cdg[`BfEFP2
+R3
+Z35 w1619631858
+R5
+R6
+L0 31
+R7
+r1
+31
+R13
+R8
+Z36 n@multiplier@p
+!i10b 1
+Z37 !s100 l12Wo<[Fb>bM3dPBgMgRm1
+!s85 0
+Z38 !s108 1619631859.401000
+R12
+!s101 -O0
+vMultiplierP_vlg_check_tst
+!i10b 1
+Z39 !s100 fRJHmKF<VohfD:[Z:YdhS0
+Z40 Id=<I_;=jVL7l3P:Y9QL0@0
+Z41 VE[`@hSEOoH:VQ9R>GJPW`2
+R3
+R35
+R17
+R18
+L0 65
+R7
+r1
+!s85 0
+31
+Z42 !s108 1619631859.464000
+Z43 !s107 Lab6.vt|
+R21
+!s101 -O0
+R8
+Z44 n@multiplier@p_vlg_check_tst
+vMultiplierP_vlg_sample_tst
+!i10b 1
+Z45 !s100 OZMO2<7ID@m@Tm3Eb65N`3
+Z46 IRYjDO^1UZ^h6Dj[]Ii:Ch3
+Z47 VTHn:RFV`SeZMgM65AD[Dk3
+R3
+R35
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R42
+R43
+R21
+!s101 -O0
+R8
+Z48 n@multiplier@p_vlg_sample_tst
+vMultiplierP_vlg_vec_tst
+!i10b 1
+Z49 !s100 R[hlz;@hIecz0e=dJGNBf0
+Z50 Iaj?h;Qa^C>3;zI33]Z9`T1
+Z51 VJT_OXW]AZ@Q]e;6><lF0^0
+R3
+R35
+R17
+R18
+Z52 L0 453
+R7
+r1
+!s85 0
+31
+R42
+R43
+R21
+!s101 -O0
+R8
+Z53 n@multiplier@p_vlg_vec_tst

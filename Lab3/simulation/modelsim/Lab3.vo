@@ -1,0 +1,1508 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "03/28/2021 22:18:20"
+
+// 
+// Device: Altera EP2C35F672C6 Package FBGA672
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Lab3 (
+	regA,
+	reset,
+	clock,
+	Ser,
+	\function ,
+	regB);
+output 	[7:0] regA;
+input 	reset;
+input 	clock;
+input 	Ser;
+input 	\function ;
+output 	[7:0] regB;
+
+// Design Ports Information
+// regA[7]	=>  Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[6]	=>  Location: PIN_F11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[5]	=>  Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[4]	=>  Location: PIN_D10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[3]	=>  Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[2]	=>  Location: PIN_J14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[1]	=>  Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regA[0]	=>  Location: PIN_D12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[7]	=>  Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[6]	=>  Location: PIN_E10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[5]	=>  Location: PIN_H11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[4]	=>  Location: PIN_H12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[3]	=>  Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[2]	=>  Location: PIN_J13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[1]	=>  Location: PIN_E12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// regB[0]	=>  Location: PIN_G11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// function	=>  Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// clock	=>  Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// reset	=>  Location: PIN_P1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Ser	=>  Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \inst2|inst7|inst1~0_combout ;
+wire \inst2|inst6|inst1~0_combout ;
+wire \clock~combout ;
+wire \clock~clkctrl_outclk ;
+wire \function~combout ;
+wire \Ser~combout ;
+wire \inst|inst4|inst3~0_combout ;
+wire \reset~combout ;
+wire \reset~clkctrl_outclk ;
+wire \inst|inst~regout ;
+wire \inst2|inst|inst~combout ;
+wire \inst1|inst~regout ;
+wire \inst2|inst1|inst1~0_combout ;
+wire \inst1|inst5~regout ;
+wire \inst|inst7|inst3~0_combout ;
+wire \inst|inst5~regout ;
+wire \inst2|inst1|inst5~0_combout ;
+wire \inst2|inst2|inst1~0_combout ;
+wire \inst1|inst8~regout ;
+wire \inst2|inst3|inst1~0_combout ;
+wire \inst2|inst3|inst1~combout ;
+wire \inst1|inst11~regout ;
+wire \inst|inst13|inst3~0_combout ;
+wire \inst|inst11~regout ;
+wire \inst2|inst3|inst5~0_combout ;
+wire \inst2|inst3|inst5~1_combout ;
+wire \inst2|inst3|inst5~2_combout ;
+wire \inst2|inst4|inst1~combout ;
+wire \inst1|inst14~regout ;
+wire \inst2|inst4|inst5~0_combout ;
+wire \inst2|inst5|inst1~combout ;
+wire \inst1|inst17~regout ;
+wire \inst|inst19|inst3~0_combout ;
+wire \inst|inst17~regout ;
+wire \inst2|inst6|inst1~combout ;
+wire \inst1|inst21~regout ;
+wire \inst|inst22|inst3~0_combout ;
+wire \inst|inst21~regout ;
+wire \inst2|inst5|inst5~0_combout ;
+wire \inst2|inst7|inst1~combout ;
+wire \inst1|inst23~regout ;
+wire \inst|inst25|inst3~0_combout ;
+wire \inst|inst23~regout ;
+wire \inst|inst16|inst3~0_combout ;
+wire \inst|inst14~regout ;
+wire \inst|inst10|inst3~0_combout ;
+wire \inst|inst8~regout ;
+
+
+// Location: LCCOMB_X22_Y35_N16
+cycloneii_lcell_comb \inst2|inst7|inst1~0 (
+// Equation(s):
+// \inst2|inst7|inst1~0_combout  = \inst|inst23~regout  $ (\inst1|inst23~regout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst|inst23~regout ),
+	.datad(\inst1|inst23~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst7|inst1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst7|inst1~0 .lut_mask = 16'h0FF0;
+defparam \inst2|inst7|inst1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y35_N6
+cycloneii_lcell_comb \inst2|inst6|inst1~0 (
+// Equation(s):
+// \inst2|inst6|inst1~0_combout  = \inst1|inst21~regout  $ (\inst|inst21~regout )
+
+	.dataa(vcc),
+	.datab(\inst1|inst21~regout ),
+	.datac(vcc),
+	.datad(\inst|inst21~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst6|inst1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst6|inst1~0 .lut_mask = 16'h33CC;
+defparam \inst2|inst6|inst1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_P2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \clock~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\clock~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(clock));
+// synopsys translate_off
+defparam \clock~I .input_async_reset = "none";
+defparam \clock~I .input_power_up = "low";
+defparam \clock~I .input_register_mode = "none";
+defparam \clock~I .input_sync_reset = "none";
+defparam \clock~I .oe_async_reset = "none";
+defparam \clock~I .oe_power_up = "low";
+defparam \clock~I .oe_register_mode = "none";
+defparam \clock~I .oe_sync_reset = "none";
+defparam \clock~I .operation_mode = "input";
+defparam \clock~I .output_async_reset = "none";
+defparam \clock~I .output_power_up = "low";
+defparam \clock~I .output_register_mode = "none";
+defparam \clock~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: CLKCTRL_G3
+cycloneii_clkctrl \clock~clkctrl (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\clock~combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clock~clkctrl_outclk ));
+// synopsys translate_off
+defparam \clock~clkctrl .clock_type = "global clock";
+defparam \clock~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: PIN_C13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \function~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\function~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(\function ));
+// synopsys translate_off
+defparam \function~I .input_async_reset = "none";
+defparam \function~I .input_power_up = "low";
+defparam \function~I .input_register_mode = "none";
+defparam \function~I .input_sync_reset = "none";
+defparam \function~I .oe_async_reset = "none";
+defparam \function~I .oe_power_up = "low";
+defparam \function~I .oe_register_mode = "none";
+defparam \function~I .oe_sync_reset = "none";
+defparam \function~I .operation_mode = "input";
+defparam \function~I .output_async_reset = "none";
+defparam \function~I .output_power_up = "low";
+defparam \function~I .output_register_mode = "none";
+defparam \function~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \Ser~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\Ser~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(Ser));
+// synopsys translate_off
+defparam \Ser~I .input_async_reset = "none";
+defparam \Ser~I .input_power_up = "low";
+defparam \Ser~I .input_register_mode = "none";
+defparam \Ser~I .input_sync_reset = "none";
+defparam \Ser~I .oe_async_reset = "none";
+defparam \Ser~I .oe_power_up = "low";
+defparam \Ser~I .oe_register_mode = "none";
+defparam \Ser~I .oe_sync_reset = "none";
+defparam \Ser~I .operation_mode = "input";
+defparam \Ser~I .output_async_reset = "none";
+defparam \Ser~I .output_power_up = "low";
+defparam \Ser~I .output_register_mode = "none";
+defparam \Ser~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y35_N24
+cycloneii_lcell_comb \inst|inst4|inst3~0 (
+// Equation(s):
+// \inst|inst4|inst3~0_combout  = (\function~combout  & ((\inst1|inst~regout ))) # (!\function~combout  & (\Ser~combout ))
+
+	.dataa(\function~combout ),
+	.datab(\Ser~combout ),
+	.datac(\inst1|inst~regout ),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\inst|inst4|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst4|inst3~0 .lut_mask = 16'hE4E4;
+defparam \inst|inst4|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_P1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \reset~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\reset~combout ),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(reset));
+// synopsys translate_off
+defparam \reset~I .input_async_reset = "none";
+defparam \reset~I .input_power_up = "low";
+defparam \reset~I .input_register_mode = "none";
+defparam \reset~I .input_sync_reset = "none";
+defparam \reset~I .oe_async_reset = "none";
+defparam \reset~I .oe_power_up = "low";
+defparam \reset~I .oe_register_mode = "none";
+defparam \reset~I .oe_sync_reset = "none";
+defparam \reset~I .operation_mode = "input";
+defparam \reset~I .output_async_reset = "none";
+defparam \reset~I .output_power_up = "low";
+defparam \reset~I .output_register_mode = "none";
+defparam \reset~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: CLKCTRL_G1
+cycloneii_clkctrl \reset~clkctrl (
+	.ena(vcc),
+	.inclk({gnd,gnd,gnd,\reset~combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\reset~clkctrl_outclk ));
+// synopsys translate_off
+defparam \reset~clkctrl .clock_type = "global clock";
+defparam \reset~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N25
+cycloneii_lcell_ff \inst|inst (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst4|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst~regout ));
+
+// Location: LCCOMB_X23_Y35_N4
+cycloneii_lcell_comb \inst2|inst|inst (
+// Equation(s):
+// \inst2|inst|inst~combout  = \inst1|inst~regout  $ (\inst|inst~regout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst1|inst~regout ),
+	.datad(\inst|inst~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst|inst~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst|inst .lut_mask = 16'h0FF0;
+defparam \inst2|inst|inst .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N5
+cycloneii_lcell_ff \inst1|inst (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst|inst~combout ),
+	.sdata(\Ser~combout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst~regout ));
+
+// Location: LCCOMB_X23_Y35_N18
+cycloneii_lcell_comb \inst2|inst1|inst1~0 (
+// Equation(s):
+// \inst2|inst1|inst1~0_combout  = \inst|inst5~regout  $ (\inst1|inst5~regout  $ (((\inst1|inst~regout  & \inst|inst~regout ))))
+
+	.dataa(\inst|inst5~regout ),
+	.datab(\inst1|inst~regout ),
+	.datac(\inst1|inst5~regout ),
+	.datad(\inst|inst~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst1|inst1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst1|inst1~0 .lut_mask = 16'h965A;
+defparam \inst2|inst1|inst1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N19
+cycloneii_lcell_ff \inst1|inst5 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst1|inst1~0_combout ),
+	.sdata(\inst1|inst~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst5~regout ));
+
+// Location: LCCOMB_X23_Y35_N6
+cycloneii_lcell_comb \inst|inst7|inst3~0 (
+// Equation(s):
+// \inst|inst7|inst3~0_combout  = (\function~combout  & (\inst1|inst5~regout )) # (!\function~combout  & ((\inst|inst~regout )))
+
+	.dataa(\function~combout ),
+	.datab(vcc),
+	.datac(\inst1|inst5~regout ),
+	.datad(\inst|inst~regout ),
+	.cin(gnd),
+	.combout(\inst|inst7|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst7|inst3~0 .lut_mask = 16'hF5A0;
+defparam \inst|inst7|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N7
+cycloneii_lcell_ff \inst|inst5 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst7|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst5~regout ));
+
+// Location: LCCOMB_X23_Y35_N8
+cycloneii_lcell_comb \inst2|inst1|inst5~0 (
+// Equation(s):
+// \inst2|inst1|inst5~0_combout  = (\inst1|inst5~regout  & ((\inst|inst5~regout ) # ((\inst|inst~regout  & \inst1|inst~regout )))) # (!\inst1|inst5~regout  & (\inst|inst~regout  & (\inst1|inst~regout  & \inst|inst5~regout )))
+
+	.dataa(\inst|inst~regout ),
+	.datab(\inst1|inst5~regout ),
+	.datac(\inst1|inst~regout ),
+	.datad(\inst|inst5~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst1|inst5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst1|inst5~0 .lut_mask = 16'hEC80;
+defparam \inst2|inst1|inst5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y35_N26
+cycloneii_lcell_comb \inst2|inst2|inst1~0 (
+// Equation(s):
+// \inst2|inst2|inst1~0_combout  = \inst|inst8~regout  $ (\inst1|inst8~regout  $ (\inst2|inst1|inst5~0_combout ))
+
+	.dataa(\inst|inst8~regout ),
+	.datab(vcc),
+	.datac(\inst1|inst8~regout ),
+	.datad(\inst2|inst1|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst2|inst1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst2|inst1~0 .lut_mask = 16'hA55A;
+defparam \inst2|inst2|inst1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N27
+cycloneii_lcell_ff \inst1|inst8 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst2|inst1~0_combout ),
+	.sdata(\inst1|inst5~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst8~regout ));
+
+// Location: LCCOMB_X23_Y35_N10
+cycloneii_lcell_comb \inst2|inst3|inst1~0 (
+// Equation(s):
+// \inst2|inst3|inst1~0_combout  = \inst|inst11~regout  $ (((\inst|inst8~regout  & ((\inst1|inst8~regout ) # (\inst2|inst1|inst5~0_combout ))) # (!\inst|inst8~regout  & (\inst1|inst8~regout  & \inst2|inst1|inst5~0_combout ))))
+
+	.dataa(\inst|inst8~regout ),
+	.datab(\inst|inst11~regout ),
+	.datac(\inst1|inst8~regout ),
+	.datad(\inst2|inst1|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst3|inst1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst3|inst1~0 .lut_mask = 16'h366C;
+defparam \inst2|inst3|inst1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y35_N22
+cycloneii_lcell_comb \inst2|inst3|inst1 (
+// Equation(s):
+// \inst2|inst3|inst1~combout  = \inst1|inst11~regout  $ (\inst2|inst3|inst1~0_combout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst1|inst11~regout ),
+	.datad(\inst2|inst3|inst1~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst3|inst1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst3|inst1 .lut_mask = 16'h0FF0;
+defparam \inst2|inst3|inst1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N23
+cycloneii_lcell_ff \inst1|inst11 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst3|inst1~combout ),
+	.sdata(\inst1|inst8~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst11~regout ));
+
+// Location: LCCOMB_X23_Y35_N20
+cycloneii_lcell_comb \inst|inst13|inst3~0 (
+// Equation(s):
+// \inst|inst13|inst3~0_combout  = (\function~combout  & ((\inst1|inst11~regout ))) # (!\function~combout  & (\inst|inst8~regout ))
+
+	.dataa(\inst|inst8~regout ),
+	.datab(vcc),
+	.datac(\function~combout ),
+	.datad(\inst1|inst11~regout ),
+	.cin(gnd),
+	.combout(\inst|inst13|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst13|inst3~0 .lut_mask = 16'hFA0A;
+defparam \inst|inst13|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N21
+cycloneii_lcell_ff \inst|inst11 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst13|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst11~regout ));
+
+// Location: LCCOMB_X23_Y35_N14
+cycloneii_lcell_comb \inst2|inst3|inst5~0 (
+// Equation(s):
+// \inst2|inst3|inst5~0_combout  = (\inst|inst11~regout  & \inst1|inst11~regout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst|inst11~regout ),
+	.datad(\inst1|inst11~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst3|inst5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst3|inst5~0 .lut_mask = 16'hF000;
+defparam \inst2|inst3|inst5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y35_N2
+cycloneii_lcell_comb \inst2|inst3|inst5~1 (
+// Equation(s):
+// \inst2|inst3|inst5~1_combout  = (\inst|inst11~regout ) # (\inst1|inst11~regout )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst|inst11~regout ),
+	.datad(\inst1|inst11~regout ),
+	.cin(gnd),
+	.combout(\inst2|inst3|inst5~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst3|inst5~1 .lut_mask = 16'hFFF0;
+defparam \inst2|inst3|inst5~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y35_N30
+cycloneii_lcell_comb \inst2|inst3|inst5~2 (
+// Equation(s):
+// \inst2|inst3|inst5~2_combout  = (\inst2|inst3|inst5~1_combout  & ((\inst|inst8~regout  & ((\inst1|inst8~regout ) # (\inst2|inst1|inst5~0_combout ))) # (!\inst|inst8~regout  & (\inst1|inst8~regout  & \inst2|inst1|inst5~0_combout ))))
+
+	.dataa(\inst|inst8~regout ),
+	.datab(\inst1|inst8~regout ),
+	.datac(\inst2|inst1|inst5~0_combout ),
+	.datad(\inst2|inst3|inst5~1_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst3|inst5~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst3|inst5~2 .lut_mask = 16'hE800;
+defparam \inst2|inst3|inst5~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y35_N14
+cycloneii_lcell_comb \inst2|inst4|inst1 (
+// Equation(s):
+// \inst2|inst4|inst1~combout  = \inst|inst14~regout  $ (\inst1|inst14~regout  $ (((\inst2|inst3|inst5~0_combout ) # (\inst2|inst3|inst5~2_combout ))))
+
+	.dataa(\inst|inst14~regout ),
+	.datab(\inst2|inst3|inst5~0_combout ),
+	.datac(\inst1|inst14~regout ),
+	.datad(\inst2|inst3|inst5~2_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst4|inst1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst4|inst1 .lut_mask = 16'hA596;
+defparam \inst2|inst4|inst1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N15
+cycloneii_lcell_ff \inst1|inst14 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst4|inst1~combout ),
+	.sdata(\inst1|inst11~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst14~regout ));
+
+// Location: LCCOMB_X22_Y35_N12
+cycloneii_lcell_comb \inst2|inst4|inst5~0 (
+// Equation(s):
+// \inst2|inst4|inst5~0_combout  = (\inst|inst14~regout  & ((\inst1|inst14~regout ) # ((\inst2|inst3|inst5~0_combout ) # (\inst2|inst3|inst5~2_combout )))) # (!\inst|inst14~regout  & (\inst1|inst14~regout  & ((\inst2|inst3|inst5~0_combout ) # 
+// (\inst2|inst3|inst5~2_combout ))))
+
+	.dataa(\inst|inst14~regout ),
+	.datab(\inst1|inst14~regout ),
+	.datac(\inst2|inst3|inst5~0_combout ),
+	.datad(\inst2|inst3|inst5~2_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst4|inst5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst4|inst5~0 .lut_mask = 16'hEEE8;
+defparam \inst2|inst4|inst5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y35_N20
+cycloneii_lcell_comb \inst2|inst5|inst1 (
+// Equation(s):
+// \inst2|inst5|inst1~combout  = \inst|inst17~regout  $ (\inst1|inst17~regout  $ (\inst2|inst4|inst5~0_combout ))
+
+	.dataa(vcc),
+	.datab(\inst|inst17~regout ),
+	.datac(\inst1|inst17~regout ),
+	.datad(\inst2|inst4|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst5|inst1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst5|inst1 .lut_mask = 16'hC33C;
+defparam \inst2|inst5|inst1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N21
+cycloneii_lcell_ff \inst1|inst17 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst5|inst1~combout ),
+	.sdata(\inst1|inst14~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst17~regout ));
+
+// Location: LCCOMB_X22_Y35_N4
+cycloneii_lcell_comb \inst|inst19|inst3~0 (
+// Equation(s):
+// \inst|inst19|inst3~0_combout  = (\function~combout  & ((\inst1|inst17~regout ))) # (!\function~combout  & (\inst|inst14~regout ))
+
+	.dataa(\inst|inst14~regout ),
+	.datab(vcc),
+	.datac(\inst1|inst17~regout ),
+	.datad(\function~combout ),
+	.cin(gnd),
+	.combout(\inst|inst19|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst19|inst3~0 .lut_mask = 16'hF0AA;
+defparam \inst|inst19|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N5
+cycloneii_lcell_ff \inst|inst17 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst19|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst17~regout ));
+
+// Location: LCCOMB_X22_Y35_N30
+cycloneii_lcell_comb \inst2|inst6|inst1 (
+// Equation(s):
+// \inst2|inst6|inst1~combout  = \inst2|inst6|inst1~0_combout  $ (((\inst|inst17~regout  & ((\inst1|inst17~regout ) # (\inst2|inst4|inst5~0_combout ))) # (!\inst|inst17~regout  & (\inst1|inst17~regout  & \inst2|inst4|inst5~0_combout ))))
+
+	.dataa(\inst2|inst6|inst1~0_combout ),
+	.datab(\inst|inst17~regout ),
+	.datac(\inst1|inst17~regout ),
+	.datad(\inst2|inst4|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst6|inst1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst6|inst1 .lut_mask = 16'h566A;
+defparam \inst2|inst6|inst1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N31
+cycloneii_lcell_ff \inst1|inst21 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst6|inst1~combout ),
+	.sdata(\inst1|inst17~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst21~regout ));
+
+// Location: LCCOMB_X22_Y35_N18
+cycloneii_lcell_comb \inst|inst22|inst3~0 (
+// Equation(s):
+// \inst|inst22|inst3~0_combout  = (\function~combout  & (\inst1|inst21~regout )) # (!\function~combout  & ((\inst|inst17~regout )))
+
+	.dataa(vcc),
+	.datab(\inst1|inst21~regout ),
+	.datac(\inst|inst17~regout ),
+	.datad(\function~combout ),
+	.cin(gnd),
+	.combout(\inst|inst22|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst22|inst3~0 .lut_mask = 16'hCCF0;
+defparam \inst|inst22|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N19
+cycloneii_lcell_ff \inst|inst21 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst22|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst21~regout ));
+
+// Location: LCCOMB_X22_Y35_N22
+cycloneii_lcell_comb \inst2|inst5|inst5~0 (
+// Equation(s):
+// \inst2|inst5|inst5~0_combout  = (\inst1|inst17~regout  & ((\inst|inst17~regout ) # (\inst2|inst4|inst5~0_combout ))) # (!\inst1|inst17~regout  & (\inst|inst17~regout  & \inst2|inst4|inst5~0_combout ))
+
+	.dataa(\inst1|inst17~regout ),
+	.datab(vcc),
+	.datac(\inst|inst17~regout ),
+	.datad(\inst2|inst4|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst5|inst5~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst5|inst5~0 .lut_mask = 16'hFAA0;
+defparam \inst2|inst5|inst5~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y35_N28
+cycloneii_lcell_comb \inst2|inst7|inst1 (
+// Equation(s):
+// \inst2|inst7|inst1~combout  = \inst2|inst7|inst1~0_combout  $ (((\inst|inst21~regout  & ((\inst1|inst21~regout ) # (\inst2|inst5|inst5~0_combout ))) # (!\inst|inst21~regout  & (\inst1|inst21~regout  & \inst2|inst5|inst5~0_combout ))))
+
+	.dataa(\inst2|inst7|inst1~0_combout ),
+	.datab(\inst|inst21~regout ),
+	.datac(\inst1|inst21~regout ),
+	.datad(\inst2|inst5|inst5~0_combout ),
+	.cin(gnd),
+	.combout(\inst2|inst7|inst1~combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst2|inst7|inst1 .lut_mask = 16'h566A;
+defparam \inst2|inst7|inst1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N29
+cycloneii_lcell_ff \inst1|inst23 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst2|inst7|inst1~combout ),
+	.sdata(\inst1|inst21~regout ),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(!\function~combout ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst1|inst23~regout ));
+
+// Location: LCCOMB_X22_Y35_N24
+cycloneii_lcell_comb \inst|inst25|inst3~0 (
+// Equation(s):
+// \inst|inst25|inst3~0_combout  = (\function~combout  & ((\inst1|inst23~regout ))) # (!\function~combout  & (\inst|inst21~regout ))
+
+	.dataa(vcc),
+	.datab(\inst|inst21~regout ),
+	.datac(\inst1|inst23~regout ),
+	.datad(\function~combout ),
+	.cin(gnd),
+	.combout(\inst|inst25|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst25|inst3~0 .lut_mask = 16'hF0CC;
+defparam \inst|inst25|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N25
+cycloneii_lcell_ff \inst|inst23 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst25|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst23~regout ));
+
+// Location: LCCOMB_X22_Y35_N10
+cycloneii_lcell_comb \inst|inst16|inst3~0 (
+// Equation(s):
+// \inst|inst16|inst3~0_combout  = (\function~combout  & (\inst1|inst14~regout )) # (!\function~combout  & ((\inst|inst11~regout )))
+
+	.dataa(vcc),
+	.datab(\inst1|inst14~regout ),
+	.datac(\inst|inst11~regout ),
+	.datad(\function~combout ),
+	.cin(gnd),
+	.combout(\inst|inst16|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst16|inst3~0 .lut_mask = 16'hCCF0;
+defparam \inst|inst16|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X22_Y35_N11
+cycloneii_lcell_ff \inst|inst14 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst16|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst14~regout ));
+
+// Location: LCCOMB_X23_Y35_N16
+cycloneii_lcell_comb \inst|inst10|inst3~0 (
+// Equation(s):
+// \inst|inst10|inst3~0_combout  = (\function~combout  & (\inst1|inst8~regout )) # (!\function~combout  & ((\inst|inst5~regout )))
+
+	.dataa(\function~combout ),
+	.datab(\inst1|inst8~regout ),
+	.datac(vcc),
+	.datad(\inst|inst5~regout ),
+	.cin(gnd),
+	.combout(\inst|inst10|inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst|inst10|inst3~0 .lut_mask = 16'hDD88;
+defparam \inst|inst10|inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X23_Y35_N17
+cycloneii_lcell_ff \inst|inst8 (
+	.clk(\clock~clkctrl_outclk ),
+	.datain(\inst|inst10|inst3~0_combout ),
+	.sdata(gnd),
+	.aclr(!\reset~clkctrl_outclk ),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\inst|inst8~regout ));
+
+// Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[7]~I (
+	.datain(\inst|inst23~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[7]));
+// synopsys translate_off
+defparam \regA[7]~I .input_async_reset = "none";
+defparam \regA[7]~I .input_power_up = "low";
+defparam \regA[7]~I .input_register_mode = "none";
+defparam \regA[7]~I .input_sync_reset = "none";
+defparam \regA[7]~I .oe_async_reset = "none";
+defparam \regA[7]~I .oe_power_up = "low";
+defparam \regA[7]~I .oe_register_mode = "none";
+defparam \regA[7]~I .oe_sync_reset = "none";
+defparam \regA[7]~I .operation_mode = "output";
+defparam \regA[7]~I .output_async_reset = "none";
+defparam \regA[7]~I .output_power_up = "low";
+defparam \regA[7]~I .output_register_mode = "none";
+defparam \regA[7]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_F11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[6]~I (
+	.datain(\inst|inst21~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[6]));
+// synopsys translate_off
+defparam \regA[6]~I .input_async_reset = "none";
+defparam \regA[6]~I .input_power_up = "low";
+defparam \regA[6]~I .input_register_mode = "none";
+defparam \regA[6]~I .input_sync_reset = "none";
+defparam \regA[6]~I .oe_async_reset = "none";
+defparam \regA[6]~I .oe_power_up = "low";
+defparam \regA[6]~I .oe_register_mode = "none";
+defparam \regA[6]~I .oe_sync_reset = "none";
+defparam \regA[6]~I .operation_mode = "output";
+defparam \regA[6]~I .output_async_reset = "none";
+defparam \regA[6]~I .output_power_up = "low";
+defparam \regA[6]~I .output_register_mode = "none";
+defparam \regA[6]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[5]~I (
+	.datain(\inst|inst17~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[5]));
+// synopsys translate_off
+defparam \regA[5]~I .input_async_reset = "none";
+defparam \regA[5]~I .input_power_up = "low";
+defparam \regA[5]~I .input_register_mode = "none";
+defparam \regA[5]~I .input_sync_reset = "none";
+defparam \regA[5]~I .oe_async_reset = "none";
+defparam \regA[5]~I .oe_power_up = "low";
+defparam \regA[5]~I .oe_register_mode = "none";
+defparam \regA[5]~I .oe_sync_reset = "none";
+defparam \regA[5]~I .operation_mode = "output";
+defparam \regA[5]~I .output_async_reset = "none";
+defparam \regA[5]~I .output_power_up = "low";
+defparam \regA[5]~I .output_register_mode = "none";
+defparam \regA[5]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[4]~I (
+	.datain(\inst|inst14~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[4]));
+// synopsys translate_off
+defparam \regA[4]~I .input_async_reset = "none";
+defparam \regA[4]~I .input_power_up = "low";
+defparam \regA[4]~I .input_register_mode = "none";
+defparam \regA[4]~I .input_sync_reset = "none";
+defparam \regA[4]~I .oe_async_reset = "none";
+defparam \regA[4]~I .oe_power_up = "low";
+defparam \regA[4]~I .oe_register_mode = "none";
+defparam \regA[4]~I .oe_sync_reset = "none";
+defparam \regA[4]~I .operation_mode = "output";
+defparam \regA[4]~I .output_async_reset = "none";
+defparam \regA[4]~I .output_power_up = "low";
+defparam \regA[4]~I .output_register_mode = "none";
+defparam \regA[4]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[3]~I (
+	.datain(\inst|inst11~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[3]));
+// synopsys translate_off
+defparam \regA[3]~I .input_async_reset = "none";
+defparam \regA[3]~I .input_power_up = "low";
+defparam \regA[3]~I .input_register_mode = "none";
+defparam \regA[3]~I .input_sync_reset = "none";
+defparam \regA[3]~I .oe_async_reset = "none";
+defparam \regA[3]~I .oe_power_up = "low";
+defparam \regA[3]~I .oe_register_mode = "none";
+defparam \regA[3]~I .oe_sync_reset = "none";
+defparam \regA[3]~I .operation_mode = "output";
+defparam \regA[3]~I .output_async_reset = "none";
+defparam \regA[3]~I .output_power_up = "low";
+defparam \regA[3]~I .output_register_mode = "none";
+defparam \regA[3]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_J14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[2]~I (
+	.datain(\inst|inst8~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[2]));
+// synopsys translate_off
+defparam \regA[2]~I .input_async_reset = "none";
+defparam \regA[2]~I .input_power_up = "low";
+defparam \regA[2]~I .input_register_mode = "none";
+defparam \regA[2]~I .input_sync_reset = "none";
+defparam \regA[2]~I .oe_async_reset = "none";
+defparam \regA[2]~I .oe_power_up = "low";
+defparam \regA[2]~I .oe_register_mode = "none";
+defparam \regA[2]~I .oe_sync_reset = "none";
+defparam \regA[2]~I .operation_mode = "output";
+defparam \regA[2]~I .output_async_reset = "none";
+defparam \regA[2]~I .output_power_up = "low";
+defparam \regA[2]~I .output_register_mode = "none";
+defparam \regA[2]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[1]~I (
+	.datain(\inst|inst5~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[1]));
+// synopsys translate_off
+defparam \regA[1]~I .input_async_reset = "none";
+defparam \regA[1]~I .input_power_up = "low";
+defparam \regA[1]~I .input_register_mode = "none";
+defparam \regA[1]~I .input_sync_reset = "none";
+defparam \regA[1]~I .oe_async_reset = "none";
+defparam \regA[1]~I .oe_power_up = "low";
+defparam \regA[1]~I .oe_register_mode = "none";
+defparam \regA[1]~I .oe_sync_reset = "none";
+defparam \regA[1]~I .operation_mode = "output";
+defparam \regA[1]~I .output_async_reset = "none";
+defparam \regA[1]~I .output_power_up = "low";
+defparam \regA[1]~I .output_register_mode = "none";
+defparam \regA[1]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_D12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regA[0]~I (
+	.datain(\inst|inst~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regA[0]));
+// synopsys translate_off
+defparam \regA[0]~I .input_async_reset = "none";
+defparam \regA[0]~I .input_power_up = "low";
+defparam \regA[0]~I .input_register_mode = "none";
+defparam \regA[0]~I .input_sync_reset = "none";
+defparam \regA[0]~I .oe_async_reset = "none";
+defparam \regA[0]~I .oe_power_up = "low";
+defparam \regA[0]~I .oe_register_mode = "none";
+defparam \regA[0]~I .oe_sync_reset = "none";
+defparam \regA[0]~I .operation_mode = "output";
+defparam \regA[0]~I .output_async_reset = "none";
+defparam \regA[0]~I .output_power_up = "low";
+defparam \regA[0]~I .output_register_mode = "none";
+defparam \regA[0]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[7]~I (
+	.datain(\inst1|inst23~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[7]));
+// synopsys translate_off
+defparam \regB[7]~I .input_async_reset = "none";
+defparam \regB[7]~I .input_power_up = "low";
+defparam \regB[7]~I .input_register_mode = "none";
+defparam \regB[7]~I .input_sync_reset = "none";
+defparam \regB[7]~I .oe_async_reset = "none";
+defparam \regB[7]~I .oe_power_up = "low";
+defparam \regB[7]~I .oe_register_mode = "none";
+defparam \regB[7]~I .oe_sync_reset = "none";
+defparam \regB[7]~I .operation_mode = "output";
+defparam \regB[7]~I .output_async_reset = "none";
+defparam \regB[7]~I .output_power_up = "low";
+defparam \regB[7]~I .output_register_mode = "none";
+defparam \regB[7]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_E10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[6]~I (
+	.datain(\inst1|inst21~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[6]));
+// synopsys translate_off
+defparam \regB[6]~I .input_async_reset = "none";
+defparam \regB[6]~I .input_power_up = "low";
+defparam \regB[6]~I .input_register_mode = "none";
+defparam \regB[6]~I .input_sync_reset = "none";
+defparam \regB[6]~I .oe_async_reset = "none";
+defparam \regB[6]~I .oe_power_up = "low";
+defparam \regB[6]~I .oe_register_mode = "none";
+defparam \regB[6]~I .oe_sync_reset = "none";
+defparam \regB[6]~I .operation_mode = "output";
+defparam \regB[6]~I .output_async_reset = "none";
+defparam \regB[6]~I .output_power_up = "low";
+defparam \regB[6]~I .output_register_mode = "none";
+defparam \regB[6]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_H11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[5]~I (
+	.datain(\inst1|inst17~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[5]));
+// synopsys translate_off
+defparam \regB[5]~I .input_async_reset = "none";
+defparam \regB[5]~I .input_power_up = "low";
+defparam \regB[5]~I .input_register_mode = "none";
+defparam \regB[5]~I .input_sync_reset = "none";
+defparam \regB[5]~I .oe_async_reset = "none";
+defparam \regB[5]~I .oe_power_up = "low";
+defparam \regB[5]~I .oe_register_mode = "none";
+defparam \regB[5]~I .oe_sync_reset = "none";
+defparam \regB[5]~I .operation_mode = "output";
+defparam \regB[5]~I .output_async_reset = "none";
+defparam \regB[5]~I .output_power_up = "low";
+defparam \regB[5]~I .output_register_mode = "none";
+defparam \regB[5]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_H12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[4]~I (
+	.datain(\inst1|inst14~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[4]));
+// synopsys translate_off
+defparam \regB[4]~I .input_async_reset = "none";
+defparam \regB[4]~I .input_power_up = "low";
+defparam \regB[4]~I .input_register_mode = "none";
+defparam \regB[4]~I .input_sync_reset = "none";
+defparam \regB[4]~I .oe_async_reset = "none";
+defparam \regB[4]~I .oe_power_up = "low";
+defparam \regB[4]~I .oe_register_mode = "none";
+defparam \regB[4]~I .oe_sync_reset = "none";
+defparam \regB[4]~I .operation_mode = "output";
+defparam \regB[4]~I .output_async_reset = "none";
+defparam \regB[4]~I .output_power_up = "low";
+defparam \regB[4]~I .output_register_mode = "none";
+defparam \regB[4]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[3]~I (
+	.datain(\inst1|inst11~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[3]));
+// synopsys translate_off
+defparam \regB[3]~I .input_async_reset = "none";
+defparam \regB[3]~I .input_power_up = "low";
+defparam \regB[3]~I .input_register_mode = "none";
+defparam \regB[3]~I .input_sync_reset = "none";
+defparam \regB[3]~I .oe_async_reset = "none";
+defparam \regB[3]~I .oe_power_up = "low";
+defparam \regB[3]~I .oe_register_mode = "none";
+defparam \regB[3]~I .oe_sync_reset = "none";
+defparam \regB[3]~I .operation_mode = "output";
+defparam \regB[3]~I .output_async_reset = "none";
+defparam \regB[3]~I .output_power_up = "low";
+defparam \regB[3]~I .output_register_mode = "none";
+defparam \regB[3]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_J13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[2]~I (
+	.datain(\inst1|inst8~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[2]));
+// synopsys translate_off
+defparam \regB[2]~I .input_async_reset = "none";
+defparam \regB[2]~I .input_power_up = "low";
+defparam \regB[2]~I .input_register_mode = "none";
+defparam \regB[2]~I .input_sync_reset = "none";
+defparam \regB[2]~I .oe_async_reset = "none";
+defparam \regB[2]~I .oe_power_up = "low";
+defparam \regB[2]~I .oe_register_mode = "none";
+defparam \regB[2]~I .oe_sync_reset = "none";
+defparam \regB[2]~I .operation_mode = "output";
+defparam \regB[2]~I .output_async_reset = "none";
+defparam \regB[2]~I .output_power_up = "low";
+defparam \regB[2]~I .output_register_mode = "none";
+defparam \regB[2]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_E12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[1]~I (
+	.datain(\inst1|inst5~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[1]));
+// synopsys translate_off
+defparam \regB[1]~I .input_async_reset = "none";
+defparam \regB[1]~I .input_power_up = "low";
+defparam \regB[1]~I .input_register_mode = "none";
+defparam \regB[1]~I .input_sync_reset = "none";
+defparam \regB[1]~I .oe_async_reset = "none";
+defparam \regB[1]~I .oe_power_up = "low";
+defparam \regB[1]~I .oe_register_mode = "none";
+defparam \regB[1]~I .oe_sync_reset = "none";
+defparam \regB[1]~I .operation_mode = "output";
+defparam \regB[1]~I .output_async_reset = "none";
+defparam \regB[1]~I .output_power_up = "low";
+defparam \regB[1]~I .output_register_mode = "none";
+defparam \regB[1]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_G11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+cycloneii_io \regB[0]~I (
+	.datain(\inst1|inst~regout ),
+	.oe(vcc),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(regB[0]));
+// synopsys translate_off
+defparam \regB[0]~I .input_async_reset = "none";
+defparam \regB[0]~I .input_power_up = "low";
+defparam \regB[0]~I .input_register_mode = "none";
+defparam \regB[0]~I .input_sync_reset = "none";
+defparam \regB[0]~I .oe_async_reset = "none";
+defparam \regB[0]~I .oe_power_up = "low";
+defparam \regB[0]~I .oe_register_mode = "none";
+defparam \regB[0]~I .oe_sync_reset = "none";
+defparam \regB[0]~I .operation_mode = "output";
+defparam \regB[0]~I .output_async_reset = "none";
+defparam \regB[0]~I .output_power_up = "low";
+defparam \regB[0]~I .output_register_mode = "none";
+defparam \regB[0]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+endmodule

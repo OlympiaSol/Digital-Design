@@ -1,0 +1,78 @@
+# Reading E:/Quartus/quartus/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do Lab8_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying E:\Quartus\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied E:\Quartus\quartus\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Lab8.vho}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneii_atom_pack
+# -- Loading package cycloneii_components
+# -- Compiling entity Lab8
+# -- Compiling architecture structure of Lab8
+# 
+# vcom -93 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity lab8_tb
+# -- Compiling architecture lab8_tb_arch of lab8_tb
+# 
+# vsim -t 1ps -L cycloneii -L gate_work -L work -voptargs="+acc"  lab8_tb
+# vsim -L cycloneii -L gate_work -L work -voptargs=\"+acc\" -t 1ps lab8_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.lab8_tb(lab8_tb_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneii.cycloneii_atom_pack(body)
+# Loading cycloneii.cycloneii_components
+# Loading work.lab8(structure)
+# ** Failure: (vsim-3817) Port "\gnd\" of entity "lab8" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /lab8_tb/DUT File: Lab8.vho Line: 38
+# ** Error: (vsim-3732) E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd(49): No default binding for component instance 'DUT'.
+# 
+#    The following component port is not on the entity:
+#           gnd
+# 
+#         Region: /lab8_tb/DUT
+# Loading cycloneii.cycloneii_lcell_comb(vital_lcell_comb)
+# Loading cycloneii.cycloneii_lcell_ff(vital_lcell_ff)
+# Loading cycloneii.cycloneii_and1(altvital)
+# Loading cycloneii.cycloneii_io(structure)
+# Loading cycloneii.cycloneii_mux21(altvital)
+# Loading cycloneii.cycloneii_dffe(behave)
+# Loading cycloneii.cycloneii_asynch_io(behave)
+# Loading cycloneii.cycloneii_clkctrl(vital_clkctrl)
+# Loading cycloneii.cycloneii_ena_reg(behave)
+# Loading cycloneii.cycloneii_ram_block(block_arch)
+# Loading cycloneii.cycloneii_ram_register(reg_arch)
+# Loading cycloneii.cycloneii_ram_pulse_generator(pgen_arch)
+# Fatal error at Lab8.vho line 38
+#  while elaborating region: /lab8_tb/DUT
+# Fatal error in file E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd
+#  while elaborating region: /lab8_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./Lab8_run_msim_gate_vhdl.do PAUSED at line 12

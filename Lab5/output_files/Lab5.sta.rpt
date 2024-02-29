@@ -1,0 +1,1148 @@
+TimeQuest Timing Analyzer report for Lab5
+Wed Apr 21 23:26:04 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'CLK'
+ 12. Slow Model Hold: 'CLK'
+ 13. Slow Model Minimum Pulse Width: 'CLK'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'CLK'
+ 26. Fast Model Hold: 'CLK'
+ 27. Fast Model Minimum Pulse Width: 'CLK'
+ 28. Setup Times
+ 29. Hold Times
+ 30. Clock to Output Times
+ 31. Minimum Clock to Output Times
+ 32. Propagation Delay
+ 33. Minimum Propagation Delay
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Progagation Delay
+ 40. Minimum Progagation Delay
+ 41. Setup Transfers
+ 42. Hold Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; Lab5                                                              ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CLK        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 350.02 MHz ; 350.02 MHz      ; CLK        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -1.857 ; -11.919       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 1.157 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -1.222 ; -9.222                ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'CLK'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -1.857 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 3.115      ;
+; -1.840 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.876      ;
+; -1.736 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.994      ;
+; -1.719 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.755      ;
+; -1.716 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.974      ;
+; -1.691 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.949      ;
+; -1.674 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.710      ;
+; -1.657 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.915      ;
+; -1.646 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.682      ;
+; -1.638 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.896      ;
+; -1.595 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.853      ;
+; -1.550 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.808      ;
+; -1.536 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.794      ;
+; -1.525 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.561      ;
+; -1.516 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.774      ;
+; -1.497 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.755      ;
+; -1.491 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.749      ;
+; -1.481 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.517      ;
+; -1.438 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.696      ;
+; -1.413 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.449      ;
+; -1.395 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.653      ;
+; -1.350 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.608      ;
+; -1.340 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.376      ;
+; -1.337 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.373      ;
+; -1.309 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.345      ;
+; -1.300 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.336      ;
+; -1.297 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.222      ; 2.555      ;
+; -1.281 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.317      ;
+; -1.213 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.249      ;
+; -1.183 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.219      ;
+; -1.164 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 2.200      ;
+; -0.960 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.996      ;
+; -0.828 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.864      ;
+; -0.825 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.861      ;
+; -0.683 ; Counter8Bit:inst|output[7]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.719      ;
+; -0.387 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[0]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.423      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'CLK'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.157 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[0]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.423      ;
+; 1.453 ; Counter8Bit:inst|output[7]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.719      ;
+; 1.595 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.861      ;
+; 1.598 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.864      ;
+; 1.730 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.996      ;
+; 1.934 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.200      ;
+; 1.953 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.219      ;
+; 1.983 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.249      ;
+; 2.051 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.317      ;
+; 2.067 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.555      ;
+; 2.070 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.336      ;
+; 2.079 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.345      ;
+; 2.107 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.373      ;
+; 2.110 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.376      ;
+; 2.120 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.608      ;
+; 2.165 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.653      ;
+; 2.183 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.449      ;
+; 2.208 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.696      ;
+; 2.251 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.517      ;
+; 2.261 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.749      ;
+; 2.267 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.755      ;
+; 2.286 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.774      ;
+; 2.295 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.561      ;
+; 2.306 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.794      ;
+; 2.320 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.808      ;
+; 2.365 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.853      ;
+; 2.408 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.896      ;
+; 2.416 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.682      ;
+; 2.427 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.915      ;
+; 2.444 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.710      ;
+; 2.461 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.949      ;
+; 2.486 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.974      ;
+; 2.489 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.755      ;
+; 2.506 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 2.994      ;
+; 2.610 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.876      ;
+; 2.627 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.222      ; 3.115      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'CLK'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK   ; Rise       ; CLK                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[0]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[0]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[1]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[1]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[2]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[2]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[3]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[3]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[4]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[4]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[5]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[5]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[6]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[6]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[7]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[7]~_emulated ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[0]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[0]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[1]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[1]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[2]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[2]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[3]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[3]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[4]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[4]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[5]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[5]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[6]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[6]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[7]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[7]~_emulated|clk         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; CLR       ; CLK        ; 7.348 ; 7.348 ; Rise       ; CLK             ;
+; SET       ; CLK        ; 7.467 ; 7.467 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; CLR       ; CLK        ; -4.916 ; -4.916 ; Rise       ; CLK             ;
+; SET       ; CLK        ; -5.766 ; -5.766 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 11.077 ; 11.077 ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 10.342 ; 10.342 ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 9.333  ; 9.333  ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 9.673  ; 9.673  ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 10.168 ; 10.168 ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 11.077 ; 11.077 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 10.160 ; 10.160 ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 10.227 ; 10.227 ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 11.526 ; 11.526 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 10.922 ; 10.922 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 11.511 ; 11.511 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 11.506 ; 11.506 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 11.526 ; 11.526 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 10.918 ; 10.918 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 10.912 ; 10.912 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 10.914 ; 10.914 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 10.260 ; 10.260 ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 5.882  ; 5.882  ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 5.873  ; 5.873  ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 6.154  ; 6.154  ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 6.419  ; 6.419  ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 9.219  ; 9.219  ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 9.695  ; 9.695  ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 10.260 ; 10.260 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 9.682  ; 9.682  ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 8.876  ; 8.876  ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 9.892  ; 9.892  ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 8.876  ; 8.876  ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 9.413  ; 9.413  ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 9.711  ; 9.711  ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 10.627 ; 10.627 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 9.706  ; 9.706  ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 9.776  ; 9.776  ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 10.285 ; 10.285 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 10.300 ; 10.300 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 10.883 ; 10.883 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 10.908 ; 10.908 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 10.900 ; 10.900 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 10.295 ; 10.295 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 10.289 ; 10.289 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 10.285 ; 10.285 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 5.873  ; 5.873  ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 5.882  ; 5.882  ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 5.873  ; 5.873  ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 6.154  ; 6.154  ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 6.419  ; 6.419  ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 9.219  ; 9.219  ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 9.695  ; 9.695  ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 10.260 ; 10.260 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 9.682  ; 9.682  ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; CLR        ; HEX7[0]     ; 14.828 ; 14.828 ; 14.828 ; 14.828 ;
+; CLR        ; HEX7[1]     ; 13.574 ; 13.819 ; 13.819 ; 13.574 ;
+; CLR        ; HEX7[2]     ; 13.978 ; 14.164 ; 14.164 ; 13.978 ;
+; CLR        ; HEX7[3]     ; 14.654 ; 14.654 ; 14.654 ; 14.654 ;
+; CLR        ; HEX7[4]     ; 15.563 ; 15.563 ; 15.563 ; 15.563 ;
+; CLR        ; HEX7[5]     ; 14.646 ; 14.646 ; 14.646 ; 14.646 ;
+; CLR        ; HEX7[6]     ; 14.713 ; 14.713 ; 14.713 ; 14.713 ;
+; CLR        ; HEX8[0]     ; 15.421 ; 15.421 ; 15.421 ; 15.421 ;
+; CLR        ; HEX8[1]     ; 15.732 ; 16.010 ; 16.010 ; 15.732 ;
+; CLR        ; HEX8[2]     ; 16.005 ; 16.005 ; 16.005 ; 16.005 ;
+; CLR        ; HEX8[3]     ; 16.025 ; 16.025 ; 16.025 ; 16.025 ;
+; CLR        ; HEX8[4]     ; 15.417 ; 15.417 ; 15.417 ; 15.417 ;
+; CLR        ; HEX8[5]     ; 15.411 ; 15.411 ; 15.411 ; 15.411 ;
+; CLR        ; HEX8[6]     ; 15.413 ; 15.413 ; 15.413 ; 15.413 ;
+; CLR        ; Q1[0]       ;        ; 10.372 ; 10.372 ;        ;
+; CLR        ; Q1[1]       ;        ; 10.364 ; 10.364 ;        ;
+; CLR        ; Q1[2]       ;        ; 10.640 ; 10.640 ;        ;
+; CLR        ; Q1[3]       ;        ; 10.528 ; 10.528 ;        ;
+; CLR        ; Q1[4]       ;        ; 13.723 ; 13.723 ;        ;
+; CLR        ; Q1[5]       ;        ; 14.193 ; 14.193 ;        ;
+; CLR        ; Q1[6]       ;        ; 14.759 ; 14.759 ;        ;
+; CLR        ; Q1[7]       ;        ; 14.181 ; 14.181 ;        ;
+; SET        ; HEX7[0]     ; 14.947 ; 14.947 ; 14.947 ; 14.947 ;
+; SET        ; HEX7[1]     ; 13.938 ; 13.693 ; 13.693 ; 13.938 ;
+; SET        ; HEX7[2]     ; 14.283 ; 14.097 ; 14.097 ; 14.283 ;
+; SET        ; HEX7[3]     ; 14.773 ; 14.773 ; 14.773 ; 14.773 ;
+; SET        ; HEX7[4]     ; 15.682 ; 15.682 ; 15.682 ; 15.682 ;
+; SET        ; HEX7[5]     ; 14.765 ; 14.765 ; 14.765 ; 14.765 ;
+; SET        ; HEX7[6]     ; 14.832 ; 14.832 ; 14.832 ; 14.832 ;
+; SET        ; HEX8[0]     ; 15.540 ; 15.540 ; 15.540 ; 15.540 ;
+; SET        ; HEX8[1]     ; 16.129 ; 15.851 ; 15.851 ; 16.129 ;
+; SET        ; HEX8[2]     ; 16.124 ; 16.124 ; 16.124 ; 16.124 ;
+; SET        ; HEX8[3]     ; 16.144 ; 16.144 ; 16.144 ; 16.144 ;
+; SET        ; HEX8[4]     ; 15.536 ; 15.536 ; 15.536 ; 15.536 ;
+; SET        ; HEX8[5]     ; 15.530 ; 15.530 ; 15.530 ; 15.530 ;
+; SET        ; HEX8[6]     ; 15.532 ; 15.532 ; 15.532 ; 15.532 ;
+; SET        ; Q1[0]       ; 10.491 ;        ;        ; 10.491 ;
+; SET        ; Q1[1]       ; 10.483 ;        ;        ; 10.483 ;
+; SET        ; Q1[2]       ; 10.759 ;        ;        ; 10.759 ;
+; SET        ; Q1[3]       ; 10.647 ;        ;        ; 10.647 ;
+; SET        ; Q1[4]       ; 13.842 ;        ;        ; 13.842 ;
+; SET        ; Q1[5]       ; 14.312 ;        ;        ; 14.312 ;
+; SET        ; Q1[6]       ; 14.878 ;        ;        ; 14.878 ;
+; SET        ; Q1[7]       ; 14.300 ;        ;        ; 14.300 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; CLR        ; HEX7[0]     ; 13.804 ; 13.804 ; 13.804 ; 13.804 ;
+; CLR        ; HEX7[1]     ; 12.788 ; 12.788 ; 12.788 ; 12.788 ;
+; CLR        ; HEX7[2]     ; 13.325 ; 13.325 ; 13.325 ; 13.325 ;
+; CLR        ; HEX7[3]     ; 13.623 ; 13.623 ; 13.623 ; 13.623 ;
+; CLR        ; HEX7[4]     ; 14.539 ; 14.863 ; 14.863 ; 14.539 ;
+; CLR        ; HEX7[5]     ; 13.618 ; 13.618 ; 13.618 ; 13.618 ;
+; CLR        ; HEX7[6]     ; 13.688 ; 13.688 ; 13.688 ; 13.688 ;
+; CLR        ; HEX8[0]     ; 13.766 ; 13.766 ; 13.766 ; 13.766 ;
+; CLR        ; HEX8[1]     ; 14.349 ; 14.349 ; 14.349 ; 14.349 ;
+; CLR        ; HEX8[2]     ; 14.374 ; 14.683 ; 14.683 ; 14.374 ;
+; CLR        ; HEX8[3]     ; 14.366 ; 14.366 ; 14.366 ; 14.366 ;
+; CLR        ; HEX8[4]     ; 14.083 ; 13.761 ; 13.761 ; 14.083 ;
+; CLR        ; HEX8[5]     ; 14.074 ; 13.755 ; 13.755 ; 14.074 ;
+; CLR        ; HEX8[6]     ; 13.751 ; 13.751 ; 13.751 ; 13.751 ;
+; CLR        ; Q1[0]       ;        ; 9.904  ; 9.904  ;        ;
+; CLR        ; Q1[1]       ;        ; 9.891  ; 9.891  ;        ;
+; CLR        ; Q1[2]       ;        ; 10.178 ; 10.178 ;        ;
+; CLR        ; Q1[3]       ;        ; 10.331 ; 10.331 ;        ;
+; CLR        ; Q1[4]       ;        ; 12.685 ; 12.685 ;        ;
+; CLR        ; Q1[5]       ;        ; 13.158 ; 13.158 ;        ;
+; CLR        ; Q1[6]       ;        ; 13.716 ; 13.716 ;        ;
+; CLR        ; Q1[7]       ;        ; 13.145 ; 13.145 ;        ;
+; SET        ; HEX7[0]     ; 14.120 ; 14.120 ; 14.120 ; 14.120 ;
+; SET        ; HEX7[1]     ; 13.104 ; 13.104 ; 13.104 ; 13.104 ;
+; SET        ; HEX7[2]     ; 13.641 ; 13.641 ; 13.641 ; 13.641 ;
+; SET        ; HEX7[3]     ; 13.939 ; 13.939 ; 13.939 ; 13.939 ;
+; SET        ; HEX7[4]     ; 15.450 ; 14.855 ; 14.855 ; 15.450 ;
+; SET        ; HEX7[5]     ; 13.934 ; 13.934 ; 13.934 ; 13.934 ;
+; SET        ; HEX7[6]     ; 14.004 ; 14.004 ; 14.004 ; 14.004 ;
+; SET        ; HEX8[0]     ; 14.923 ; 14.923 ; 14.923 ; 14.923 ;
+; SET        ; HEX8[1]     ; 15.506 ; 15.506 ; 15.506 ; 15.506 ;
+; SET        ; HEX8[2]     ; 15.837 ; 15.531 ; 15.531 ; 15.837 ;
+; SET        ; HEX8[3]     ; 15.523 ; 15.523 ; 15.523 ; 15.523 ;
+; SET        ; HEX8[4]     ; 14.918 ; 15.237 ; 15.237 ; 14.918 ;
+; SET        ; HEX8[5]     ; 14.912 ; 15.228 ; 15.228 ; 14.912 ;
+; SET        ; HEX8[6]     ; 14.908 ; 14.908 ; 14.908 ; 14.908 ;
+; SET        ; Q1[0]       ; 10.491 ;        ;        ; 10.491 ;
+; SET        ; Q1[1]       ; 10.483 ;        ;        ; 10.483 ;
+; SET        ; Q1[2]       ; 10.759 ;        ;        ; 10.759 ;
+; SET        ; Q1[3]       ; 10.647 ;        ;        ; 10.647 ;
+; SET        ; Q1[4]       ; 13.842 ;        ;        ; 13.842 ;
+; SET        ; Q1[5]       ; 14.312 ;        ;        ; 14.312 ;
+; SET        ; Q1[6]       ; 14.878 ;        ;        ; 14.878 ;
+; SET        ; Q1[7]       ; 14.300 ;        ;        ; 14.300 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; CLK   ; -0.273 ; -1.225        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 0.513 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -1.222 ; -9.222                ;
++-------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'CLK'                                                                                                                                    ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.273 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.402      ;
+; -0.254 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.286      ;
+; -0.221 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.350      ;
+; -0.204 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.333      ;
+; -0.202 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.234      ;
+; -0.191 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.320      ;
+; -0.185 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.314      ;
+; -0.166 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.198      ;
+; -0.155 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.187      ;
+; -0.152 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.281      ;
+; -0.143 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.272      ;
+; -0.139 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.268      ;
+; -0.122 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.251      ;
+; -0.116 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.245      ;
+; -0.103 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.232      ;
+; -0.103 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.135      ;
+; -0.074 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.203      ;
+; -0.070 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.199      ;
+; -0.067 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.099      ;
+; -0.061 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.190      ;
+; -0.035 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.067      ;
+; -0.034 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.163      ;
+; -0.026 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.058      ;
+; -0.021 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.053      ;
+; 0.002  ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.030      ;
+; 0.003  ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.029      ;
+; 0.008  ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.097      ; 1.121      ;
+; 0.015  ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.017      ;
+; 0.021  ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.011      ;
+; 0.032  ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 1.000      ;
+; 0.047  ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.985      ;
+; 0.137  ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.895      ;
+; 0.187  ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.845      ;
+; 0.188  ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.844      ;
+; 0.257  ; Counter8Bit:inst|output[7]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.775      ;
+; 0.367  ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[0]~_emulated ; CLK          ; CLK         ; 1.000        ; 0.000      ; 0.665      ;
++--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'CLK'                                                                                                                                    ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.513 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[0]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.665      ;
+; 0.623 ; Counter8Bit:inst|output[7]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.775      ;
+; 0.692 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.844      ;
+; 0.693 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.845      ;
+; 0.743 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.895      ;
+; 0.833 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 0.985      ;
+; 0.848 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.000      ;
+; 0.859 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.011      ;
+; 0.865 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.017      ;
+; 0.872 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.121      ;
+; 0.877 ; Counter8Bit:inst|output[6]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.878 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.030      ;
+; 0.901 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.053      ;
+; 0.906 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[1]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.058      ;
+; 0.914 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.163      ;
+; 0.915 ; Counter8Bit:inst|output[5]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.067      ;
+; 0.941 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.190      ;
+; 0.947 ; Counter8Bit:inst|output[4]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.099      ;
+; 0.950 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.199      ;
+; 0.954 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.203      ;
+; 0.983 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.135      ;
+; 0.983 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.232      ;
+; 0.996 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.245      ;
+; 1.002 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[4]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.251      ;
+; 1.019 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.268      ;
+; 1.023 ; Counter8Bit:inst|output[3]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.272      ;
+; 1.032 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.281      ;
+; 1.035 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[2]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.187      ;
+; 1.046 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.198      ;
+; 1.065 ; Counter8Bit:inst|output[2]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.314      ;
+; 1.071 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[6]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.320      ;
+; 1.082 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.234      ;
+; 1.084 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[5]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.333      ;
+; 1.101 ; Counter8Bit:inst|output[0]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.350      ;
+; 1.134 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[3]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.286      ;
+; 1.153 ; Counter8Bit:inst|output[1]~_emulated ; Counter8Bit:inst|output[7]~_emulated ; CLK          ; CLK         ; 0.000        ; 0.097      ; 1.402      ;
++-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'CLK'                                                                                 ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                               ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+; -1.222 ; 1.000        ; 2.222          ; Port Rate        ; CLK   ; Rise       ; CLK                                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[0]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[0]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[1]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[1]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[2]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[2]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[3]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[3]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[4]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[4]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[5]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[5]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[6]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[6]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; CLK   ; Rise       ; Counter8Bit:inst|output[7]~_emulated ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; CLK   ; Rise       ; Counter8Bit:inst|output[7]~_emulated ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; CLK|combout                          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[0]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[0]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[1]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[1]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[2]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[2]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[3]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[3]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[4]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[4]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[5]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[5]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[6]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[6]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK   ; Rise       ; inst|output[7]~_emulated|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK   ; Rise       ; inst|output[7]~_emulated|clk         ;
++--------+--------------+----------------+------------------+-------+------------+--------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; CLR       ; CLK        ; 3.815 ; 3.815 ; Rise       ; CLK             ;
+; SET       ; CLK        ; 3.887 ; 3.887 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; CLR       ; CLK        ; -2.715 ; -2.715 ; Rise       ; CLK             ;
+; SET       ; CLK        ; -3.126 ; -3.126 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 5.665 ; 5.665 ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 5.319 ; 5.319 ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 4.785 ; 4.785 ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 4.920 ; 4.920 ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 5.248 ; 5.248 ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 5.665 ; 5.665 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 5.222 ; 5.222 ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 5.301 ; 5.301 ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 5.917 ; 5.917 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 5.618 ; 5.618 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 5.904 ; 5.904 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 5.917 ; 5.917 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 5.908 ; 5.908 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 5.613 ; 5.613 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 5.602 ; 5.602 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 5.598 ; 5.598 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 5.330 ; 5.330 ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 3.144 ; 3.144 ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 3.134 ; 3.134 ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 3.266 ; 3.266 ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 3.364 ; 3.364 ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 4.843 ; 4.843 ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 5.037 ; 5.037 ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 5.330 ; 5.330 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 5.096 ; 5.096 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 4.573 ; 4.573 ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 5.115 ; 5.115 ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 4.573 ; 4.573 ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 4.794 ; 4.794 ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 5.036 ; 5.036 ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 5.461 ; 5.461 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 5.010 ; 5.010 ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 5.097 ; 5.097 ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 5.322 ; 5.322 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 5.605 ; 5.605 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 5.617 ; 5.617 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 5.612 ; 5.612 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 5.317 ; 5.317 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 3.134 ; 3.134 ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 3.144 ; 3.144 ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 3.134 ; 3.134 ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 3.266 ; 3.266 ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 3.364 ; 3.364 ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 4.843 ; 4.843 ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 5.037 ; 5.037 ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 5.330 ; 5.330 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 5.096 ; 5.096 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; CLR        ; HEX7[0]     ; 7.855 ; 7.855 ; 7.855 ; 7.855 ;
+; CLR        ; HEX7[1]     ; 7.220 ; 7.321 ; 7.321 ; 7.220 ;
+; CLR        ; HEX7[2]     ; 7.381 ; 7.462 ; 7.462 ; 7.381 ;
+; CLR        ; HEX7[3]     ; 7.784 ; 7.784 ; 7.784 ; 7.784 ;
+; CLR        ; HEX7[4]     ; 8.201 ; 8.201 ; 8.201 ; 8.201 ;
+; CLR        ; HEX7[5]     ; 7.758 ; 7.758 ; 7.758 ; 7.758 ;
+; CLR        ; HEX7[6]     ; 7.837 ; 7.837 ; 7.837 ; 7.837 ;
+; CLR        ; HEX8[0]     ; 8.162 ; 8.162 ; 8.162 ; 8.162 ;
+; CLR        ; HEX8[1]     ; 8.366 ; 8.448 ; 8.448 ; 8.366 ;
+; CLR        ; HEX8[2]     ; 8.461 ; 8.461 ; 8.461 ; 8.461 ;
+; CLR        ; HEX8[3]     ; 8.452 ; 8.452 ; 8.452 ; 8.452 ;
+; CLR        ; HEX8[4]     ; 8.157 ; 8.157 ; 8.157 ; 8.157 ;
+; CLR        ; HEX8[5]     ; 8.146 ; 8.146 ; 8.146 ; 8.146 ;
+; CLR        ; HEX8[6]     ; 8.142 ; 8.142 ; 8.142 ; 8.142 ;
+; CLR        ; Q1[0]       ;       ; 5.685 ; 5.685 ;       ;
+; CLR        ; Q1[1]       ;       ; 5.676 ; 5.676 ;       ;
+; CLR        ; Q1[2]       ;       ; 5.802 ; 5.802 ;       ;
+; CLR        ; Q1[3]       ;       ; 5.748 ; 5.748 ;       ;
+; CLR        ; Q1[4]       ;       ; 7.390 ; 7.390 ;       ;
+; CLR        ; Q1[5]       ;       ; 7.579 ; 7.579 ;       ;
+; CLR        ; Q1[6]       ;       ; 7.874 ; 7.874 ;       ;
+; CLR        ; Q1[7]       ;       ; 7.641 ; 7.641 ;       ;
+; SET        ; HEX7[0]     ; 7.927 ; 7.927 ; 7.927 ; 7.927 ;
+; SET        ; HEX7[1]     ; 7.393 ; 7.292 ; 7.292 ; 7.393 ;
+; SET        ; HEX7[2]     ; 7.534 ; 7.453 ; 7.453 ; 7.534 ;
+; SET        ; HEX7[3]     ; 7.856 ; 7.856 ; 7.856 ; 7.856 ;
+; SET        ; HEX7[4]     ; 8.273 ; 8.273 ; 8.273 ; 8.273 ;
+; SET        ; HEX7[5]     ; 7.830 ; 7.830 ; 7.830 ; 7.830 ;
+; SET        ; HEX7[6]     ; 7.909 ; 7.909 ; 7.909 ; 7.909 ;
+; SET        ; HEX8[0]     ; 8.234 ; 8.234 ; 8.234 ; 8.234 ;
+; SET        ; HEX8[1]     ; 8.520 ; 8.438 ; 8.438 ; 8.520 ;
+; SET        ; HEX8[2]     ; 8.533 ; 8.533 ; 8.533 ; 8.533 ;
+; SET        ; HEX8[3]     ; 8.524 ; 8.524 ; 8.524 ; 8.524 ;
+; SET        ; HEX8[4]     ; 8.229 ; 8.229 ; 8.229 ; 8.229 ;
+; SET        ; HEX8[5]     ; 8.218 ; 8.218 ; 8.218 ; 8.218 ;
+; SET        ; HEX8[6]     ; 8.214 ; 8.214 ; 8.214 ; 8.214 ;
+; SET        ; Q1[0]       ; 5.757 ;       ;       ; 5.757 ;
+; SET        ; Q1[1]       ; 5.748 ;       ;       ; 5.748 ;
+; SET        ; Q1[2]       ; 5.874 ;       ;       ; 5.874 ;
+; SET        ; Q1[3]       ; 5.820 ;       ;       ; 5.820 ;
+; SET        ; Q1[4]       ; 7.462 ;       ;       ; 7.462 ;
+; SET        ; Q1[5]       ; 7.651 ;       ;       ; 7.651 ;
+; SET        ; Q1[6]       ; 7.946 ;       ;       ; 7.946 ;
+; SET        ; Q1[7]       ; 7.713 ;       ;       ; 7.713 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; CLR        ; HEX7[0]     ; 7.428 ; 7.428 ; 7.428 ; 7.428 ;
+; CLR        ; HEX7[1]     ; 6.886 ; 6.886 ; 6.886 ; 6.886 ;
+; CLR        ; HEX7[2]     ; 7.107 ; 7.107 ; 7.107 ; 7.107 ;
+; CLR        ; HEX7[3]     ; 7.349 ; 7.349 ; 7.349 ; 7.349 ;
+; CLR        ; HEX7[4]     ; 7.774 ; 7.923 ; 7.923 ; 7.774 ;
+; CLR        ; HEX7[5]     ; 7.323 ; 7.323 ; 7.323 ; 7.323 ;
+; CLR        ; HEX7[6]     ; 7.410 ; 7.410 ; 7.410 ; 7.410 ;
+; CLR        ; HEX8[0]     ; 7.416 ; 7.416 ; 7.416 ; 7.416 ;
+; CLR        ; HEX8[1]     ; 7.699 ; 7.699 ; 7.699 ; 7.699 ;
+; CLR        ; HEX8[2]     ; 7.711 ; 7.812 ; 7.812 ; 7.711 ;
+; CLR        ; HEX8[3]     ; 7.706 ; 7.706 ; 7.706 ; 7.706 ;
+; CLR        ; HEX8[4]     ; 7.521 ; 7.411 ; 7.411 ; 7.521 ;
+; CLR        ; HEX8[5]     ; 7.504 ; 7.397 ; 7.397 ; 7.504 ;
+; CLR        ; HEX8[6]     ; 7.397 ; 7.397 ; 7.397 ; 7.397 ;
+; CLR        ; Q1[0]       ;       ; 5.492 ; 5.492 ;       ;
+; CLR        ; Q1[1]       ;       ; 5.480 ; 5.480 ;       ;
+; CLR        ; Q1[2]       ;       ; 5.617 ; 5.617 ;       ;
+; CLR        ; Q1[3]       ;       ; 5.677 ; 5.677 ;       ;
+; CLR        ; Q1[4]       ;       ; 6.937 ; 6.937 ;       ;
+; CLR        ; Q1[5]       ;       ; 7.129 ; 7.129 ;       ;
+; CLR        ; Q1[6]       ;       ; 7.416 ; 7.416 ;       ;
+; CLR        ; Q1[7]       ;       ; 7.188 ; 7.188 ;       ;
+; SET        ; HEX7[0]     ; 7.571 ; 7.571 ; 7.571 ; 7.571 ;
+; SET        ; HEX7[1]     ; 7.029 ; 7.029 ; 7.029 ; 7.029 ;
+; SET        ; HEX7[2]     ; 7.250 ; 7.250 ; 7.250 ; 7.250 ;
+; SET        ; HEX7[3]     ; 7.492 ; 7.492 ; 7.492 ; 7.492 ;
+; SET        ; HEX7[4]     ; 8.188 ; 7.917 ; 7.917 ; 8.188 ;
+; SET        ; HEX7[5]     ; 7.466 ; 7.466 ; 7.466 ; 7.466 ;
+; SET        ; HEX7[6]     ; 7.553 ; 7.553 ; 7.553 ; 7.553 ;
+; SET        ; HEX8[0]     ; 7.941 ; 7.941 ; 7.941 ; 7.941 ;
+; SET        ; HEX8[1]     ; 8.224 ; 8.224 ; 8.224 ; 8.224 ;
+; SET        ; HEX8[2]     ; 8.334 ; 8.236 ; 8.236 ; 8.334 ;
+; SET        ; HEX8[3]     ; 8.231 ; 8.231 ; 8.231 ; 8.231 ;
+; SET        ; HEX8[4]     ; 7.936 ; 8.043 ; 8.043 ; 7.936 ;
+; SET        ; HEX8[5]     ; 7.922 ; 8.026 ; 8.026 ; 7.922 ;
+; SET        ; HEX8[6]     ; 7.922 ; 7.922 ; 7.922 ; 7.922 ;
+; SET        ; Q1[0]       ; 5.757 ;       ;       ; 5.757 ;
+; SET        ; Q1[1]       ; 5.748 ;       ;       ; 5.748 ;
+; SET        ; Q1[2]       ; 5.874 ;       ;       ; 5.874 ;
+; SET        ; Q1[3]       ; 5.820 ;       ;       ; 5.820 ;
+; SET        ; Q1[4]       ; 7.462 ;       ;       ; 7.462 ;
+; SET        ; Q1[5]       ; 7.651 ;       ;       ; 7.651 ;
+; SET        ; Q1[6]       ; 7.946 ;       ;       ; 7.946 ;
+; SET        ; Q1[7]       ; 7.713 ;       ;       ; 7.713 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -1.857  ; 0.513 ; N/A      ; N/A     ; -1.222              ;
+;  CLK             ; -1.857  ; 0.513 ; N/A      ; N/A     ; -1.222              ;
+; Design-wide TNS  ; -11.919 ; 0.0   ; 0.0      ; 0.0     ; -9.222              ;
+;  CLK             ; -11.919 ; 0.000 ; N/A      ; N/A     ; -9.222              ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; CLR       ; CLK        ; 7.348 ; 7.348 ; Rise       ; CLK             ;
+; SET       ; CLK        ; 7.467 ; 7.467 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; CLR       ; CLK        ; -2.715 ; -2.715 ; Rise       ; CLK             ;
+; SET       ; CLK        ; -3.126 ; -3.126 ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 11.077 ; 11.077 ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 10.342 ; 10.342 ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 9.333  ; 9.333  ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 9.673  ; 9.673  ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 10.168 ; 10.168 ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 11.077 ; 11.077 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 10.160 ; 10.160 ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 10.227 ; 10.227 ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 11.526 ; 11.526 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 10.922 ; 10.922 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 11.511 ; 11.511 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 11.506 ; 11.506 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 11.526 ; 11.526 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 10.918 ; 10.918 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 10.912 ; 10.912 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 10.914 ; 10.914 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 10.260 ; 10.260 ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 5.882  ; 5.882  ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 5.873  ; 5.873  ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 6.154  ; 6.154  ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 6.419  ; 6.419  ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 9.219  ; 9.219  ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 9.695  ; 9.695  ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 10.260 ; 10.260 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 9.682  ; 9.682  ; Rise       ; CLK             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; HEX7[*]   ; CLK        ; 4.573 ; 4.573 ; Rise       ; CLK             ;
+;  HEX7[0]  ; CLK        ; 5.115 ; 5.115 ; Rise       ; CLK             ;
+;  HEX7[1]  ; CLK        ; 4.573 ; 4.573 ; Rise       ; CLK             ;
+;  HEX7[2]  ; CLK        ; 4.794 ; 4.794 ; Rise       ; CLK             ;
+;  HEX7[3]  ; CLK        ; 5.036 ; 5.036 ; Rise       ; CLK             ;
+;  HEX7[4]  ; CLK        ; 5.461 ; 5.461 ; Rise       ; CLK             ;
+;  HEX7[5]  ; CLK        ; 5.010 ; 5.010 ; Rise       ; CLK             ;
+;  HEX7[6]  ; CLK        ; 5.097 ; 5.097 ; Rise       ; CLK             ;
+; HEX8[*]   ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+;  HEX8[0]  ; CLK        ; 5.322 ; 5.322 ; Rise       ; CLK             ;
+;  HEX8[1]  ; CLK        ; 5.605 ; 5.605 ; Rise       ; CLK             ;
+;  HEX8[2]  ; CLK        ; 5.617 ; 5.617 ; Rise       ; CLK             ;
+;  HEX8[3]  ; CLK        ; 5.612 ; 5.612 ; Rise       ; CLK             ;
+;  HEX8[4]  ; CLK        ; 5.317 ; 5.317 ; Rise       ; CLK             ;
+;  HEX8[5]  ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+;  HEX8[6]  ; CLK        ; 5.303 ; 5.303 ; Rise       ; CLK             ;
+; Q1[*]     ; CLK        ; 3.134 ; 3.134 ; Rise       ; CLK             ;
+;  Q1[0]    ; CLK        ; 3.144 ; 3.144 ; Rise       ; CLK             ;
+;  Q1[1]    ; CLK        ; 3.134 ; 3.134 ; Rise       ; CLK             ;
+;  Q1[2]    ; CLK        ; 3.266 ; 3.266 ; Rise       ; CLK             ;
+;  Q1[3]    ; CLK        ; 3.364 ; 3.364 ; Rise       ; CLK             ;
+;  Q1[4]    ; CLK        ; 4.843 ; 4.843 ; Rise       ; CLK             ;
+;  Q1[5]    ; CLK        ; 5.037 ; 5.037 ; Rise       ; CLK             ;
+;  Q1[6]    ; CLK        ; 5.330 ; 5.330 ; Rise       ; CLK             ;
+;  Q1[7]    ; CLK        ; 5.096 ; 5.096 ; Rise       ; CLK             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; CLR        ; HEX7[0]     ; 14.828 ; 14.828 ; 14.828 ; 14.828 ;
+; CLR        ; HEX7[1]     ; 13.574 ; 13.819 ; 13.819 ; 13.574 ;
+; CLR        ; HEX7[2]     ; 13.978 ; 14.164 ; 14.164 ; 13.978 ;
+; CLR        ; HEX7[3]     ; 14.654 ; 14.654 ; 14.654 ; 14.654 ;
+; CLR        ; HEX7[4]     ; 15.563 ; 15.563 ; 15.563 ; 15.563 ;
+; CLR        ; HEX7[5]     ; 14.646 ; 14.646 ; 14.646 ; 14.646 ;
+; CLR        ; HEX7[6]     ; 14.713 ; 14.713 ; 14.713 ; 14.713 ;
+; CLR        ; HEX8[0]     ; 15.421 ; 15.421 ; 15.421 ; 15.421 ;
+; CLR        ; HEX8[1]     ; 15.732 ; 16.010 ; 16.010 ; 15.732 ;
+; CLR        ; HEX8[2]     ; 16.005 ; 16.005 ; 16.005 ; 16.005 ;
+; CLR        ; HEX8[3]     ; 16.025 ; 16.025 ; 16.025 ; 16.025 ;
+; CLR        ; HEX8[4]     ; 15.417 ; 15.417 ; 15.417 ; 15.417 ;
+; CLR        ; HEX8[5]     ; 15.411 ; 15.411 ; 15.411 ; 15.411 ;
+; CLR        ; HEX8[6]     ; 15.413 ; 15.413 ; 15.413 ; 15.413 ;
+; CLR        ; Q1[0]       ;        ; 10.372 ; 10.372 ;        ;
+; CLR        ; Q1[1]       ;        ; 10.364 ; 10.364 ;        ;
+; CLR        ; Q1[2]       ;        ; 10.640 ; 10.640 ;        ;
+; CLR        ; Q1[3]       ;        ; 10.528 ; 10.528 ;        ;
+; CLR        ; Q1[4]       ;        ; 13.723 ; 13.723 ;        ;
+; CLR        ; Q1[5]       ;        ; 14.193 ; 14.193 ;        ;
+; CLR        ; Q1[6]       ;        ; 14.759 ; 14.759 ;        ;
+; CLR        ; Q1[7]       ;        ; 14.181 ; 14.181 ;        ;
+; SET        ; HEX7[0]     ; 14.947 ; 14.947 ; 14.947 ; 14.947 ;
+; SET        ; HEX7[1]     ; 13.938 ; 13.693 ; 13.693 ; 13.938 ;
+; SET        ; HEX7[2]     ; 14.283 ; 14.097 ; 14.097 ; 14.283 ;
+; SET        ; HEX7[3]     ; 14.773 ; 14.773 ; 14.773 ; 14.773 ;
+; SET        ; HEX7[4]     ; 15.682 ; 15.682 ; 15.682 ; 15.682 ;
+; SET        ; HEX7[5]     ; 14.765 ; 14.765 ; 14.765 ; 14.765 ;
+; SET        ; HEX7[6]     ; 14.832 ; 14.832 ; 14.832 ; 14.832 ;
+; SET        ; HEX8[0]     ; 15.540 ; 15.540 ; 15.540 ; 15.540 ;
+; SET        ; HEX8[1]     ; 16.129 ; 15.851 ; 15.851 ; 16.129 ;
+; SET        ; HEX8[2]     ; 16.124 ; 16.124 ; 16.124 ; 16.124 ;
+; SET        ; HEX8[3]     ; 16.144 ; 16.144 ; 16.144 ; 16.144 ;
+; SET        ; HEX8[4]     ; 15.536 ; 15.536 ; 15.536 ; 15.536 ;
+; SET        ; HEX8[5]     ; 15.530 ; 15.530 ; 15.530 ; 15.530 ;
+; SET        ; HEX8[6]     ; 15.532 ; 15.532 ; 15.532 ; 15.532 ;
+; SET        ; Q1[0]       ; 10.491 ;        ;        ; 10.491 ;
+; SET        ; Q1[1]       ; 10.483 ;        ;        ; 10.483 ;
+; SET        ; Q1[2]       ; 10.759 ;        ;        ; 10.759 ;
+; SET        ; Q1[3]       ; 10.647 ;        ;        ; 10.647 ;
+; SET        ; Q1[4]       ; 13.842 ;        ;        ; 13.842 ;
+; SET        ; Q1[5]       ; 14.312 ;        ;        ; 14.312 ;
+; SET        ; Q1[6]       ; 14.878 ;        ;        ; 14.878 ;
+; SET        ; Q1[7]       ; 14.300 ;        ;        ; 14.300 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; CLR        ; HEX7[0]     ; 7.428 ; 7.428 ; 7.428 ; 7.428 ;
+; CLR        ; HEX7[1]     ; 6.886 ; 6.886 ; 6.886 ; 6.886 ;
+; CLR        ; HEX7[2]     ; 7.107 ; 7.107 ; 7.107 ; 7.107 ;
+; CLR        ; HEX7[3]     ; 7.349 ; 7.349 ; 7.349 ; 7.349 ;
+; CLR        ; HEX7[4]     ; 7.774 ; 7.923 ; 7.923 ; 7.774 ;
+; CLR        ; HEX7[5]     ; 7.323 ; 7.323 ; 7.323 ; 7.323 ;
+; CLR        ; HEX7[6]     ; 7.410 ; 7.410 ; 7.410 ; 7.410 ;
+; CLR        ; HEX8[0]     ; 7.416 ; 7.416 ; 7.416 ; 7.416 ;
+; CLR        ; HEX8[1]     ; 7.699 ; 7.699 ; 7.699 ; 7.699 ;
+; CLR        ; HEX8[2]     ; 7.711 ; 7.812 ; 7.812 ; 7.711 ;
+; CLR        ; HEX8[3]     ; 7.706 ; 7.706 ; 7.706 ; 7.706 ;
+; CLR        ; HEX8[4]     ; 7.521 ; 7.411 ; 7.411 ; 7.521 ;
+; CLR        ; HEX8[5]     ; 7.504 ; 7.397 ; 7.397 ; 7.504 ;
+; CLR        ; HEX8[6]     ; 7.397 ; 7.397 ; 7.397 ; 7.397 ;
+; CLR        ; Q1[0]       ;       ; 5.492 ; 5.492 ;       ;
+; CLR        ; Q1[1]       ;       ; 5.480 ; 5.480 ;       ;
+; CLR        ; Q1[2]       ;       ; 5.617 ; 5.617 ;       ;
+; CLR        ; Q1[3]       ;       ; 5.677 ; 5.677 ;       ;
+; CLR        ; Q1[4]       ;       ; 6.937 ; 6.937 ;       ;
+; CLR        ; Q1[5]       ;       ; 7.129 ; 7.129 ;       ;
+; CLR        ; Q1[6]       ;       ; 7.416 ; 7.416 ;       ;
+; CLR        ; Q1[7]       ;       ; 7.188 ; 7.188 ;       ;
+; SET        ; HEX7[0]     ; 7.571 ; 7.571 ; 7.571 ; 7.571 ;
+; SET        ; HEX7[1]     ; 7.029 ; 7.029 ; 7.029 ; 7.029 ;
+; SET        ; HEX7[2]     ; 7.250 ; 7.250 ; 7.250 ; 7.250 ;
+; SET        ; HEX7[3]     ; 7.492 ; 7.492 ; 7.492 ; 7.492 ;
+; SET        ; HEX7[4]     ; 8.188 ; 7.917 ; 7.917 ; 8.188 ;
+; SET        ; HEX7[5]     ; 7.466 ; 7.466 ; 7.466 ; 7.466 ;
+; SET        ; HEX7[6]     ; 7.553 ; 7.553 ; 7.553 ; 7.553 ;
+; SET        ; HEX8[0]     ; 7.941 ; 7.941 ; 7.941 ; 7.941 ;
+; SET        ; HEX8[1]     ; 8.224 ; 8.224 ; 8.224 ; 8.224 ;
+; SET        ; HEX8[2]     ; 8.334 ; 8.236 ; 8.236 ; 8.334 ;
+; SET        ; HEX8[3]     ; 8.231 ; 8.231 ; 8.231 ; 8.231 ;
+; SET        ; HEX8[4]     ; 7.936 ; 8.043 ; 8.043 ; 7.936 ;
+; SET        ; HEX8[5]     ; 7.922 ; 8.026 ; 8.026 ; 7.922 ;
+; SET        ; HEX8[6]     ; 7.922 ; 7.922 ; 7.922 ; 7.922 ;
+; SET        ; Q1[0]       ; 5.757 ;       ;       ; 5.757 ;
+; SET        ; Q1[1]       ; 5.748 ;       ;       ; 5.748 ;
+; SET        ; Q1[2]       ; 5.874 ;       ;       ; 5.874 ;
+; SET        ; Q1[3]       ; 5.820 ;       ;       ; 5.820 ;
+; SET        ; Q1[4]       ; 7.462 ;       ;       ; 7.462 ;
+; SET        ; Q1[5]       ; 7.651 ;       ;       ; 7.651 ;
+; SET        ; Q1[6]       ; 7.946 ;       ;       ; 7.946 ;
+; SET        ; Q1[7]       ; 7.713 ;       ;       ; 7.713 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 36       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 36       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 62    ; 62   ;
+; Unconstrained Output Ports      ; 22    ; 22   ;
+; Unconstrained Output Port Paths ; 130   ; 130  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 21 23:26:04 2021
+Info: Command: quartus_sta Lab5 -c Lab5
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Lab5.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.857
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.857       -11.919 CLK 
+Info (332146): Worst-case hold slack is 1.157
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.157         0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -9.222 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.273
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.273        -1.225 CLK 
+Info (332146): Worst-case hold slack is 0.513
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.513         0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.222
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.222        -9.222 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Wed Apr 21 23:26:04 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

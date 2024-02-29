@@ -1,0 +1,328 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab8\simulation\modelsim
+Eadder
+Z1 w1619359616
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Quartus\DigitalDesignII(4202-4089)\Lab8\simulation\modelsim
+Z7 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Adder.vhd
+Z8 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/Adder.vhd
+l0
+L5
+V3gfeg7h;dN9ASZk:<4WLa3
+Z9 OV;C;10.1d;51
+33
+Z10 !s108 1622474744.459000
+Z11 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Adder.vhd|
+Z12 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Adder.vhd|
+Z13 o-2008 -work work -O0
+Z14 tExplicit 1
+!s100 A8GQ<1G7UfJEYPN`TUYJ91
+!i10b 1
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 3gfeg7h;dN9ASZk:<4WLa3
+l14
+L12
+VOV8V6zcFF4D_0D13:z90F2
+R9
+33
+R10
+R11
+R12
+R13
+R14
+!s100 eiF2Zo[=J]2eb5HN_=TDm3
+!i10b 1
+Econtrolunit
+Z15 w1622465671
+R2
+R3
+R4
+R5
+R6
+Z16 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ControlUnit.vhd
+Z17 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/ControlUnit.vhd
+l0
+L5
+V4nkLUGdVkDD09n98<1S2W3
+R9
+33
+Z18 !s108 1622474744.704000
+Z19 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ControlUnit.vhd|
+Z20 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ControlUnit.vhd|
+R13
+R14
+!s100 ]6>jh<8T=]J3W5di0mQP[0
+!i10b 1
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 11 controlunit 0 22 4nkLUGdVkDD09n98<1S2W3
+l21
+L14
+VInS0ShiUNIW];c]LMjU;C1
+R9
+33
+R18
+R19
+R20
+R13
+R14
+!s100 O@_@J]e[l7gn=j6M6nhEH2
+!i10b 1
+Ectrllogicp
+Z21 w1619705530
+Z22 DPx4 work 12 declarations 0 22 2:C8ki0d@:@hbAm:4G<k12
+R2
+R3
+R4
+R5
+R6
+Z23 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/CtrlLogicP.vhd
+Z24 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/CtrlLogicP.vhd
+l0
+L6
+VD;7fL9<@Xoa<PPK7>=b2l3
+R9
+33
+Z25 !s108 1622474744.765000
+Z26 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/CtrlLogicP.vhd|
+Z27 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/CtrlLogicP.vhd|
+R13
+R14
+!s100 HLARJP_4Q8PPO?chR0MkE2
+!i10b 1
+Abehav
+R22
+R2
+R3
+R4
+R5
+DEx4 work 10 ctrllogicp 0 22 D;7fL9<@Xoa<PPK7>=b2l3
+l17
+L13
+V@>Q;OzT4l^No@Q7YKYe7W2
+R9
+33
+R25
+R26
+R27
+R13
+R14
+!s100 7gJCBnjOgIVh1:6W?EjUa3
+!i10b 1
+Pdeclarations
+R4
+R5
+w1619624998
+R6
+8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Declare.vhd
+FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/Declare.vhd
+l0
+L3
+V2:C8ki0d@:@hbAm:4G<k12
+R9
+33
+R13
+R14
+!s100 ;UaEOhhdi9X9Uj9Ym4oVi3
+!i10b 1
+!s108 1622474744.400000
+!s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Declare.vhd|
+!s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Declare.vhd|
+Elab8
+Z28 w1622474205
+R4
+R5
+R6
+Z29 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vhd
+Z30 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vhd
+l0
+L24
+VYWoITJ4TANiM1Ro@2VcN;1
+R9
+33
+Z31 !s108 1622474744.340000
+Z32 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vhd|
+Z33 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.vhd|
+R13
+R14
+!s100 1?MlGhN`7=`LcFL`o]Non0
+!i10b 1
+Abdf_type
+R4
+R5
+DEx4 work 4 lab8 0 22 YWoITJ4TANiM1Ro@2VcN;1
+l101
+L41
+V37==>JRM58Q1G]]>4F6me0
+R9
+33
+R31
+R32
+R33
+R13
+R14
+!s100 lU75GDck6Xa::?LOGiWlQ1
+!i10b 1
+Elab8_tb
+Z34 w1622474688
+R2
+R3
+Z35 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+R5
+R6
+Z36 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd
+Z37 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd
+l0
+L7
+VoTS4<^AcYN:EFfX<4OP]20
+!s100 ?cKV^24PePjFDQk]H1;T01
+R9
+33
+!i10b 1
+Z38 !s108 1622474744.830000
+Z39 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd|
+Z40 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd|
+R13
+R14
+Alab8_tb_arch
+R2
+R3
+R35
+R4
+R5
+DEx4 work 7 lab8_tb 0 22 oTS4<^AcYN:EFfX<4OP]20
+l36
+L10
+V90_a]o7V0>h4?jdTS2mJ72
+!s100 hbnZf@bIY]42X[@IGoa[B1
+R9
+33
+!i10b 1
+R38
+R39
+R40
+R13
+R14
+Emultiplierp
+Z41 w1622376331
+R2
+R3
+R4
+R5
+R6
+Z42 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/MultiplierP.vhd
+Z43 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/MultiplierP.vhd
+l0
+L5
+Vm=n6EAD?4B63:HoQGX[Jb2
+R9
+33
+Z44 !s108 1622474744.579000
+Z45 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/MultiplierP.vhd|
+Z46 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/MultiplierP.vhd|
+R13
+R14
+!s100 NYRWP]dc]jDz0A3^J9oWa3
+!i10b 1
+Astruct
+R2
+R3
+R4
+R5
+DEx4 work 11 multiplierp 0 22 m=n6EAD?4B63:HoQGX[Jb2
+l35
+L11
+V]WHXMWl<4i`;zG6W65Jj:0
+R9
+33
+R44
+R45
+R46
+R13
+R14
+!s100 YQ>U<A_l]Ab0DL>02kbk<1
+!i10b 1
+Eram2ports4x256
+Z47 w1622388854
+R4
+R5
+R6
+Z48 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ram2ports4x256.vhd
+Z49 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/ram2ports4x256.vhd
+l0
+L42
+V0RH8aCd6Ugei@Ik?l@ke:1
+R9
+33
+Z50 !s108 1622474744.637000
+Z51 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ram2ports4x256.vhd|
+Z52 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/ram2ports4x256.vhd|
+R13
+R14
+!s100 ]J^eg;@5<SaIJe_;[2ggY0
+!i10b 1
+Asyn
+R4
+R5
+DEx4 work 14 ram2ports4x256 0 22 0RH8aCd6Ugei@Ik?l@ke:1
+l106
+L58
+V:^Jcl8c2C4?<FJ<M<;lUo3
+R9
+33
+R50
+R51
+R52
+R13
+R14
+!s100 M`NK89j0]D[4D`0Azc^TM3
+!i10b 1
+Ereg
+Z53 w1619359391
+R4
+R5
+R6
+Z54 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Reg.vhd
+Z55 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/Reg.vhd
+l0
+L4
+VXE8=hKH1Sz2gINl1kCZkU1
+R9
+33
+Z56 !s108 1622474744.520000
+Z57 !s90 -reportprogress|300|-2008|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Reg.vhd|
+Z58 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Reg.vhd|
+R13
+R14
+!s100 7=QZLAjV4;2OT;lZ5Hnb62
+!i10b 1
+Abehav
+R4
+R5
+DEx4 work 3 reg 0 22 XE8=hKH1Sz2gINl1kCZkU1
+l14
+L12
+Vb`PKAEfLMJYEU5XCOOSaW3
+R9
+33
+R56
+R57
+R58
+R13
+R14
+!s100 hn;f<7T:R3Rg0`?Q[Jo@U2
+!i10b 1

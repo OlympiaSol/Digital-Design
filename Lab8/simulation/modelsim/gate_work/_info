@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab8\simulation\modelsim
+Elab8
+Z1 w1622475040
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+Z8 dE:\Quartus\DigitalDesignII(4202-4089)\Lab8\simulation\modelsim
+Z9 8Lab8.vho
+Z10 FLab8.vho
+l0
+L34
+VzZ=P5eGm2hVl`<d:7Ei0N2
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1622475050.335000
+Z13 !s90 -reportprogress|300|-93|-work|work|Lab8.vho|
+Z14 !s107 Lab8.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 mjaK9DTA:`<=[f>oWfVR82
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 4 lab8 0 22 zZ=P5eGm2hVl`<d:7Ei0N2
+l259
+L109
+VLKG:@4b:87XLkE9kMGeVU3
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 kAJR;fXF]4jaQ@l4nMkg50
+!i10b 1
+Elab8_tb
+Z17 w1622474688
+Z18 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z20 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R5
+R6
+R8
+Z21 8E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd
+Z22 FE:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd
+l0
+L7
+VX^f<l88INGgeP0zaGigFF3
+!s100 ?cKV^24PePjFDQk]H1;T01
+R11
+31
+!i10b 1
+Z23 !s108 1622475050.465000
+Z24 !s90 -reportprogress|300|-93|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd|
+Z25 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab8/simulation/modelsim/lab8_tb.vhd|
+R15
+R16
+Alab8_tb_arch
+R18
+R19
+R20
+R5
+R6
+DEx4 work 7 lab8_tb 0 22 X^f<l88INGgeP0zaGigFF3
+l36
+L10
+VTb0JZY0jWd5G7Lm9VmE[I3
+!s100 hbnZf@bIY]42X[@IGoa[B1
+R11
+31
+!i10b 1
+R23
+R24
+R25
+R15
+R16

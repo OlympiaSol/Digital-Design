@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -2008 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd}
+vcom -2008 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd}
+vcom -2008 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier.vhd}
+vcom -2008 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd}
+vcom -2008 -work work {E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogic.vhd}
+

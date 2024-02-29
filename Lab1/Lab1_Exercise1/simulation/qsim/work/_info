@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1_Exercise1\simulation\qsim
+vLab1_Exercise1
+Z1 !s100 [dmT>0VVPQEAc]]7i>FAe2
+Z2 I1iQk0THL<E3BN[VAo]]bf0
+Z3 VN5Jl5Jz^2L;EcBG>d1W8i0
+Z4 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1_Exercise1\simulation\qsim
+Z5 w1614333617
+Z6 8Lab1_Exercise1.vo
+Z7 FLab1_Exercise1.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Lab1_Exercise1.vo|
+Z10 o-work work -O0
+Z11 n@lab1_@exercise1
+!i10b 1
+!s85 0
+Z12 !s108 1614333618.609000
+Z13 !s107 Lab1_Exercise1.vo|
+!s101 -O0
+vLab1_Exercise1_vlg_check_tst
+!i10b 1
+Z14 !s100 fLB[BURRk2]6Sznd=LGoN3
+Z15 IAnDOceE=cGh>U8?I5aaMI1
+Z16 VQ7F@nYE15cjAWmzkL]j@43
+R4
+R5
+Z17 8Lab1_Exercise1.vt
+Z18 FLab1_Exercise1.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1614333618.710000
+Z20 !s107 Lab1_Exercise1.vt|
+Z21 !s90 -work|work|Lab1_Exercise1.vt|
+!s101 -O0
+R10
+Z22 n@lab1_@exercise1_vlg_check_tst
+vLab1_Exercise1_vlg_sample_tst
+!i10b 1
+Z23 !s100 ;`6Ob=mX`GPdCV2Z`M_JG2
+Z24 I^OM9YE1Ed03E0EL5IRe@N3
+Z25 VzjnKolKPU0<S?O7S;PF]J2
+R4
+R5
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z26 n@lab1_@exercise1_vlg_sample_tst
+vLab1_Exercise1_vlg_vec_tst
+!i10b 1
+Z27 !s100 8;`3RT1B;W:@DbBClB_Jh3
+Z28 IU9`;od^CC=izVeacKi9IT2
+Z29 VTSPlEoc[5ZML0_X?lcDhW0
+R4
+R5
+R17
+R18
+Z30 L0 235
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+Z31 n@lab1_@exercise1_vlg_vec_tst

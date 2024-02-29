@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1-Register\simulation\qsim
+vREG4
+Z1 IJTUYYTK4?;NVId;gMhj[f3
+Z2 VQNifgQL4Pad[O<Z6;9W@82
+Z3 dD:\Quartus\DigitalDesignII(4202-4089)\Lab1-Register\simulation\qsim
+Z4 w1615414976
+Z5 8Register.vo
+Z6 FRegister.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Register.vo|
+Z9 o-work work -O0
+Z10 n@r@e@g4
+!i10b 1
+Z11 !s100 Bim2QEc^]73Q4H=LTHzmX0
+!s85 0
+Z12 !s108 1615414977.648000
+Z13 !s107 Register.vo|
+!s101 -O0
+vREG4_vlg_check_tst
+!i10b 1
+!s100 lXV?4EDmUemFLFPOd;YJY0
+I`cBIjEJVQLiLaHka<2aL12
+Z14 VEYRD38KEEdh==zoi<;G`E3
+R3
+Z15 w1615414975
+Z16 8Register.vt
+Z17 FRegister.vt
+L0 69
+R7
+r1
+!s85 0
+31
+Z18 !s108 1615414977.743000
+Z19 !s107 Register.vt|
+Z20 !s90 -work|work|Register.vt|
+!s101 -O0
+R9
+Z21 n@r@e@g4_vlg_check_tst
+vREG4_vlg_sample_tst
+!i10b 1
+Z22 !s100 0zJ=bkXW1:]F6?SR]>TU]3
+Z23 ImKVf2LkOKKF8<lca4K11e1
+Z24 VzYWKcZS@2Xl?2VlFn;?jz3
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z25 n@r@e@g4_vlg_sample_tst
+vREG4_vlg_vec_tst
+!i10b 1
+!s100 bnzJHgWGgEJV@m2LWWfV<3
+IWM:KW2TiEaMUK>[_T>ln_1
+Z26 VO^K2fh<SdT5L?lC`h;PYj0
+R3
+R15
+R16
+R17
+Z27 L0 245
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z28 n@r@e@g4_vlg_vec_tst
+vRegister
+Z29 !s100 Y23YbTHONhD]hYblG34MA1
+Z30 IR`C3DacPe8U<17oNa=coK0
+Z31 VQG:`RFAPT=9NVncL[dbM`3
+R3
+Z32 w1615053850
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z33 n@register
+Z34 !s108 1615053851.007000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_vlg_check_tst
+Z35 IAPn89:inK_CH12YRc5W9f1
+Z36 VV^>_Il>=:QofZ2NgKLlM23
+R3
+Z37 w1615053849
+R16
+R17
+L0 69
+R7
+r1
+31
+Z38 !s108 1615053851.097000
+Z39 !s107 Register.vt|
+R20
+R9
+Z40 n@register_vlg_check_tst
+Z41 !s100 ZYWe2@l1J8E1J:KzLOGZH1
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_vlg_sample_tst
+Z42 !s100 `n:BIo`[_NAFW<[>R8`]<0
+Z43 I>_YV4d2OZ@haJDInzTCR53
+Z44 VL6;WkFaB?P0TmIhgUERO:2
+R3
+R37
+R16
+R17
+L0 29
+R7
+r1
+31
+R38
+R39
+R20
+R9
+Z45 n@register_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_vlg_vec_tst
+Z46 !s100 8iJb0zZK6KnO=VO@kn3Iz3
+Z47 Ia4TV[I;A;2jHE2W@A_2G02
+Z48 V@[ICB;WN_MIiF6NK8^ha:3
+R3
+R37
+R16
+R17
+R27
+R7
+r1
+31
+R38
+R39
+R20
+R9
+Z49 n@register_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0

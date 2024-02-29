@@ -1,0 +1,32 @@
+Quartus II Archive log --	E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6.qarlog
+
+Archive:	E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6.qar
+Date:		Sun May 30 15:28:04 2021
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Adder.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogic.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogic.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/CtrlLogicP.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Declare.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6.qpf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6.qsf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/MultiplierP.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier_LCD.bdf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Reg.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/db/Lab6.sim.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/incremental_db/compiled_partitions/Lab6.db_info
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/CtrlLogicP_tb.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/CtrlLogic_tb.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/MultiplierP_tb.vhd
+E:/Quartus/DigitalDesignII(4202-4089)/Lab6/simulation/modelsim/Multiplier_tb.vhd
+e:/quartus/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 21 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

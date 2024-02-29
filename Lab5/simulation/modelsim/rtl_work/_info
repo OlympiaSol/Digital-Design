@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Quartus\DigitalDesignII(4202-4089)\Lab5\simulation\modelsim
+Ecounter8bit
+Z1 w1618783670
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Quartus\DigitalDesignII(4202-4089)\Lab5\simulation\modelsim
+Z7 8E:/Quartus/DigitalDesignII(4202-4089)/Lab5/Counter8Bit.vhd
+Z8 FE:/Quartus/DigitalDesignII(4202-4089)/Lab5/Counter8Bit.vhd
+l0
+L5
+VMd3hWmN2Kf2D1J`]8LeF<3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1618848272.494000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab5/Counter8Bit.vhd|
+Z12 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab5/Counter8Bit.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 =KDRZCBUfNd^9Y_T4:om42
+!i10b 1
+Abehavioural
+R2
+R3
+R4
+R5
+DEx4 work 11 counter8bit 0 22 Md3hWmN2Kf2D1J`]8LeF<3
+l18
+L13
+VTM0KH71b@e=@i9cW3R^ZQ1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 kMF9GD]Q[U6Q1d=K2L?0b2
+!i10b 1
+Ecounter8bit_tb
+Z15 w1618848166
+R2
+R3
+Z16 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R4
+R5
+R6
+Z17 8E:/Quartus/DigitalDesignII(4202-4089)/Lab5/simulation/modelsim/Counter8Bit_tb.vhd
+Z18 FE:/Quartus/DigitalDesignII(4202-4089)/Lab5/simulation/modelsim/Counter8Bit_tb.vhd
+l0
+L8
+VJHXX51o;:]kIU^QRJ^c^U3
+!s100 cPf[Id6EmIZ4GBLgY`l8n1
+R9
+31
+!i10b 1
+Z19 !s108 1618848272.559000
+Z20 !s90 -reportprogress|300|-93|-work|work|E:/Quartus/DigitalDesignII(4202-4089)/Lab5/simulation/modelsim/Counter8Bit_tb.vhd|
+Z21 !s107 E:/Quartus/DigitalDesignII(4202-4089)/Lab5/simulation/modelsim/Counter8Bit_tb.vhd|
+R13
+R14
+Acounter8bit_tb_arch
+R2
+R3
+R16
+R4
+R5
+DEx4 work 14 counter8bit_tb 0 22 JHXX51o;:]kIU^QRJ^c^U3
+l23
+L11
+VC2K7^7a2AQaXh]VHRnnIR2
+!s100 z`C^VIF^DLU__6Wk@N<9]0
+R9
+31
+!i10b 1
+R19
+R20
+R21
+R13
+R14

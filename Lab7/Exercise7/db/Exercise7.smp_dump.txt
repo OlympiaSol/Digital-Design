@@ -1,0 +1,15 @@
+
+State Machine - |newSorter|newSort:b2v_inst2|state
+Name state.CheckFlag state.CheckLoop state.WriteB state.SendAddrB_w state.WriteA state.SendAddrA_w state.Compare state.GetB state.SendAddrB_r state.GetA state.SendAddrA_r state.Waiting 
+state.Waiting 0 0 0 0 0 0 0 0 0 0 0 0 
+state.SendAddrA_r 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GetA 0 0 0 0 0 0 0 0 0 1 0 1 
+state.SendAddrB_r 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GetB 0 0 0 0 0 0 0 1 0 0 0 1 
+state.Compare 0 0 0 0 0 0 1 0 0 0 0 1 
+state.SendAddrA_w 0 0 0 0 0 1 0 0 0 0 0 1 
+state.WriteA 0 0 0 0 1 0 0 0 0 0 0 1 
+state.SendAddrB_w 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WriteB 0 0 1 0 0 0 0 0 0 0 0 1 
+state.CheckLoop 0 1 0 0 0 0 0 0 0 0 0 1 
+state.CheckFlag 1 0 0 0 0 0 0 0 0 0 0 1 

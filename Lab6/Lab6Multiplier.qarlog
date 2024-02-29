@@ -1,0 +1,18 @@
+Quartus II Archive log --	E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6Multiplier.qarlog
+
+Archive:	E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Lab6Multiplier.qar
+Date:		Sun May 30 15:06:01 2021
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.qpf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab8/Lab8.qsf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab8/output_files/Lab8.flow.rpt
+E:/Quartus/DigitalDesignII(4202-4089)/Lab8/output_files/Lab8.map.rpt
+E:/Quartus/DigitalDesignII(4202-4089)/Lab8/output_files/Lab8.map.summary
+E:/Quartus/quartus/quartus/bin64/assignment_defaults.qdf
+e:/quartus/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

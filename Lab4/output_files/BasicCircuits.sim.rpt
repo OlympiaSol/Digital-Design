@@ -1,0 +1,479 @@
+Simulator report for BasicCircuits
+Mon Apr 05 15:39:11 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 218 nodes    ;
+; Simulation Coverage         ;      52.75 % ;
+; Total Number of Transitions ; 796          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                 ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                                     ; Setting                               ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                            ; Timing        ;
+; Start time                                                                                 ; 0 ns                                  ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                   ;               ;
+; Vector input source                                                                        ; C:/Users/nikos/Desktop/skata/Lab4.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                    ; On            ;
+; Check outputs                                                                              ; Off                                   ; Off           ;
+; Report simulation coverage                                                                 ; On                                    ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                    ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                    ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                    ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                   ; Off           ;
+; Detect glitches                                                                            ; Off                                   ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                   ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                   ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                   ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                   ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                    ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                            ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                   ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                   ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                  ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      52.75 % ;
+; Total nodes checked                                 ; 218          ;
+; Total output ports checked                          ; 218          ;
+; Total output ports with complete 1/0-value coverage ; 115          ;
+; Total output ports with no 1/0-value coverage       ; 92           ;
+; Total output ports with no 1-value coverage         ; 96           ;
+; Total output ports with no 0-value coverage         ; 99           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                        ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |Lab4|Z                                                                                                           ; |Lab4|Z                                                                                                     ; pin_out          ;
+; |Lab4|reset                                                                                                       ; |Lab4|reset                                                                                                 ; out              ;
+; |Lab4|clock                                                                                                       ; |Lab4|clock                                                                                                 ; out              ;
+; |Lab4|start                                                                                                       ; |Lab4|start                                                                                                 ; out              ;
+; |Lab4|inst5                                                                                                       ; |Lab4|inst5                                                                                                 ; out0             ;
+; |Lab4|inst4                                                                                                       ; |Lab4|inst4                                                                                                 ; out0             ;
+; |Lab4|A[4]                                                                                                        ; |Lab4|A[4]                                                                                                  ; pin_out          ;
+; |Lab4|A[3]                                                                                                        ; |Lab4|A[3]                                                                                                  ; pin_out          ;
+; |Lab4|A[2]                                                                                                        ; |Lab4|A[2]                                                                                                  ; pin_out          ;
+; |Lab4|A[0]                                                                                                        ; |Lab4|A[0]                                                                                                  ; pin_out          ;
+; |Lab4|B[2]                                                                                                        ; |Lab4|B[2]                                                                                                  ; pin_out          ;
+; |Lab4|B[1]                                                                                                        ; |Lab4|B[1]                                                                                                  ; pin_out          ;
+; |Lab4|B[0]                                                                                                        ; |Lab4|B[0]                                                                                                  ; pin_out          ;
+; |Lab4|SHREG8bit:instB|inst                                                                                        ; |Lab4|SHREG8bit:instB|inst                                                                                  ; regout           ;
+; |Lab4|SHREG8bit:instB|inst2                                                                                       ; |Lab4|SHREG8bit:instB|inst2                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instB|inst5                                                                                       ; |Lab4|SHREG8bit:instB|inst5                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst28|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst27|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst23|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst23|inst1                                                                  ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst0|inst1                                                                 ; out0             ;
+; |Lab4|SHREG8bit:instA|inst                                                                                        ; |Lab4|SHREG8bit:instA|inst                                                                                  ; regout           ;
+; |Lab4|SHREG8bit:instA|inst5                                                                                       ; |Lab4|SHREG8bit:instA|inst5                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instA|inst21                                                                                      ; |Lab4|SHREG8bit:instA|inst21                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|inst17                                                                                      ; |Lab4|SHREG8bit:instA|inst17                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst23|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst23|inst1                                                                  ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst9                                                                                      ; |Lab4|FADDER8bit:inst7|inst9                                                                                ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst8                                                                                      ; |Lab4|FADDER8bit:inst7|inst8                                                                                ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst10                                                                                     ; |Lab4|FADDER8bit:inst7|inst10                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst11                                                                                     ; |Lab4|FADDER8bit:inst7|inst11                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst15                                                                                     ; |Lab4|FADDER8bit:inst7|inst15                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst13                                                                                     ; |Lab4|FADDER8bit:inst7|inst13                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst12                                                                                     ; |Lab4|FADDER8bit:inst7|inst12                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|inst14                                                                                     ; |Lab4|FADDER8bit:inst7|inst14                                                                               ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst7|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst7|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst7|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst7|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst4|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst4|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst3|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst3|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst2|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst2|inst1                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst6                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst6                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst4                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst4                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst5                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst5                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst3                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst3                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst2                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst2                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst|inst1                                                                              ; |Lab4|FADDER8bit:inst7|FA:inst|inst1                                                                        ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst6                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst6                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst5                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst5                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst2                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst2                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst1                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst1                                                                       ; out0             ;
+; |Lab4|ControlUnit:inst3|inst6                                                                                     ; |Lab4|ControlUnit:inst3|inst6                                                                               ; regout           ;
+; |Lab4|ControlUnit:inst3|inst7                                                                                     ; |Lab4|ControlUnit:inst3|inst7                                                                               ; out0             ;
+; |Lab4|ControlUnit:inst3|inst                                                                                      ; |Lab4|ControlUnit:inst3|inst                                                                                ; regout           ;
+; |Lab4|ControlUnit:inst3|inst8                                                                                     ; |Lab4|ControlUnit:inst3|inst8                                                                               ; out0             ;
+; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst3                                                                      ; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst3                                                                ; out0             ;
+; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst2                                                                      ; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst2                                                                ; out0             ;
+; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst1                                                                      ; |Lab4|ControlUnit:inst3|MUX2to1:inst13|inst1                                                                ; out0             ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a0 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[0] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a2 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[2] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a3 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[3] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a5 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[5] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a6 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[6] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a7 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[7] ; portadataout0    ;
+; |Lab4|Zflag:inst|inst                                                                                             ; |Lab4|Zflag:inst|inst                                                                                       ; regout           ;
+; |Lab4|Zflag:inst|inst~0                                                                                           ; |Lab4|Zflag:inst|inst~0                                                                                     ; out0             ;
+; |Lab4|Zflag:inst|inst~1                                                                                           ; |Lab4|Zflag:inst|inst~1                                                                                     ; out0             ;
+; |Lab4|Zflag:inst|inst~2                                                                                           ; |Lab4|Zflag:inst|inst~2                                                                                     ; out0             ;
+; |Lab4|Zflag:inst|inst5                                                                                            ; |Lab4|Zflag:inst|inst5                                                                                      ; out0             ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |Lab4|X[7]                                                                                                        ; |Lab4|X[7]                                                                                                  ; out              ;
+; |Lab4|X[6]                                                                                                        ; |Lab4|X[6]                                                                                                  ; out              ;
+; |Lab4|X[5]                                                                                                        ; |Lab4|X[5]                                                                                                  ; out              ;
+; |Lab4|X[4]                                                                                                        ; |Lab4|X[4]                                                                                                  ; out              ;
+; |Lab4|X[3]                                                                                                        ; |Lab4|X[3]                                                                                                  ; out              ;
+; |Lab4|X[2]                                                                                                        ; |Lab4|X[2]                                                                                                  ; out              ;
+; |Lab4|X[1]                                                                                                        ; |Lab4|X[1]                                                                                                  ; out              ;
+; |Lab4|X[0]                                                                                                        ; |Lab4|X[0]                                                                                                  ; out              ;
+; |Lab4|Y[7]                                                                                                        ; |Lab4|Y[7]                                                                                                  ; out              ;
+; |Lab4|Y[6]                                                                                                        ; |Lab4|Y[6]                                                                                                  ; out              ;
+; |Lab4|Y[5]                                                                                                        ; |Lab4|Y[5]                                                                                                  ; out              ;
+; |Lab4|Y[4]                                                                                                        ; |Lab4|Y[4]                                                                                                  ; out              ;
+; |Lab4|Y[2]                                                                                                        ; |Lab4|Y[2]                                                                                                  ; out              ;
+; |Lab4|Y[1]                                                                                                        ; |Lab4|Y[1]                                                                                                  ; out              ;
+; |Lab4|Y[0]                                                                                                        ; |Lab4|Y[0]                                                                                                  ; out              ;
+; |Lab4|A[7]                                                                                                        ; |Lab4|A[7]                                                                                                  ; pin_out          ;
+; |Lab4|A[6]                                                                                                        ; |Lab4|A[6]                                                                                                  ; pin_out          ;
+; |Lab4|A[5]                                                                                                        ; |Lab4|A[5]                                                                                                  ; pin_out          ;
+; |Lab4|A[1]                                                                                                        ; |Lab4|A[1]                                                                                                  ; pin_out          ;
+; |Lab4|B[7]                                                                                                        ; |Lab4|B[7]                                                                                                  ; pin_out          ;
+; |Lab4|B[6]                                                                                                        ; |Lab4|B[6]                                                                                                  ; pin_out          ;
+; |Lab4|B[5]                                                                                                        ; |Lab4|B[5]                                                                                                  ; pin_out          ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst1                                                                 ; out0             ;
+; |Lab4|SHREG8bit:instB|inst14                                                                                      ; |Lab4|SHREG8bit:instB|inst14                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst11                                                                                      ; |Lab4|SHREG8bit:instB|inst11                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst1                                                                                       ; |Lab4|SHREG8bit:instB|inst1                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst26|inst1                                                                  ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst1                                                                 ; out0             ;
+; |Lab4|SHREG8bit:instA|inst2                                                                                       ; |Lab4|SHREG8bit:instA|inst2                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instA|inst14                                                                                      ; |Lab4|SHREG8bit:instA|inst14                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|inst11                                                                                      ; |Lab4|SHREG8bit:instA|inst11                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|inst1                                                                                       ; |Lab4|SHREG8bit:instA|inst1                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst2                                                                  ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst3                                                                       ; out0             ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a1 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[1] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a4 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[4] ; portadataout0    ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                            ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+; |Lab4|X[7]                                                                                                        ; |Lab4|X[7]                                                                                                  ; out              ;
+; |Lab4|X[6]                                                                                                        ; |Lab4|X[6]                                                                                                  ; out              ;
+; |Lab4|X[5]                                                                                                        ; |Lab4|X[5]                                                                                                  ; out              ;
+; |Lab4|X[4]                                                                                                        ; |Lab4|X[4]                                                                                                  ; out              ;
+; |Lab4|X[3]                                                                                                        ; |Lab4|X[3]                                                                                                  ; out              ;
+; |Lab4|X[2]                                                                                                        ; |Lab4|X[2]                                                                                                  ; out              ;
+; |Lab4|X[1]                                                                                                        ; |Lab4|X[1]                                                                                                  ; out              ;
+; |Lab4|X[0]                                                                                                        ; |Lab4|X[0]                                                                                                  ; out              ;
+; |Lab4|Y[7]                                                                                                        ; |Lab4|Y[7]                                                                                                  ; out              ;
+; |Lab4|Y[6]                                                                                                        ; |Lab4|Y[6]                                                                                                  ; out              ;
+; |Lab4|Y[5]                                                                                                        ; |Lab4|Y[5]                                                                                                  ; out              ;
+; |Lab4|Y[4]                                                                                                        ; |Lab4|Y[4]                                                                                                  ; out              ;
+; |Lab4|Y[3]                                                                                                        ; |Lab4|Y[3]                                                                                                  ; out              ;
+; |Lab4|Y[2]                                                                                                        ; |Lab4|Y[2]                                                                                                  ; out              ;
+; |Lab4|Y[0]                                                                                                        ; |Lab4|Y[0]                                                                                                  ; out              ;
+; |Lab4|A[7]                                                                                                        ; |Lab4|A[7]                                                                                                  ; pin_out          ;
+; |Lab4|A[6]                                                                                                        ; |Lab4|A[6]                                                                                                  ; pin_out          ;
+; |Lab4|A[5]                                                                                                        ; |Lab4|A[5]                                                                                                  ; pin_out          ;
+; |Lab4|A[1]                                                                                                        ; |Lab4|A[1]                                                                                                  ; pin_out          ;
+; |Lab4|B[7]                                                                                                        ; |Lab4|B[7]                                                                                                  ; pin_out          ;
+; |Lab4|B[6]                                                                                                        ; |Lab4|B[6]                                                                                                  ; pin_out          ;
+; |Lab4|B[5]                                                                                                        ; |Lab4|B[5]                                                                                                  ; pin_out          ;
+; |Lab4|B[4]                                                                                                        ; |Lab4|B[4]                                                                                                  ; pin_out          ;
+; |Lab4|B[3]                                                                                                        ; |Lab4|B[3]                                                                                                  ; pin_out          ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst7|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst6|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst5|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst4|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst3|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst2|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst1|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst2|MUX2to1:inst0|inst1                                                                 ; out0             ;
+; |Lab4|SHREG8bit:instB|inst21                                                                                      ; |Lab4|SHREG8bit:instB|inst21                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst17                                                                                      ; |Lab4|SHREG8bit:instB|inst17                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst14                                                                                      ; |Lab4|SHREG8bit:instB|inst14                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst11                                                                                      ; |Lab4|SHREG8bit:instB|inst11                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instB|inst1                                                                                       ; |Lab4|SHREG8bit:instB|inst1                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst32|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst3                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst2                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst31|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst30|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst1                                                                        ; |Lab4|SHREG8bit:instB|MUX2to1:inst29|inst1                                                                  ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst7|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst6|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst5|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst4|inst1                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst2                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst3|inst2                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst3                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst2|inst3                                                                 ; out0             ;
+; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst1                                                                       ; |Lab4|MUX2to1BUS8:inst1|MUX2to1:inst1|inst1                                                                 ; out0             ;
+; |Lab4|SHREG8bit:instA|inst2                                                                                       ; |Lab4|SHREG8bit:instA|inst2                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instA|inst14                                                                                      ; |Lab4|SHREG8bit:instA|inst14                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|inst11                                                                                      ; |Lab4|SHREG8bit:instA|inst11                                                                                ; regout           ;
+; |Lab4|SHREG8bit:instA|inst1                                                                                       ; |Lab4|SHREG8bit:instA|inst1                                                                                 ; regout           ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst32|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst31|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst30|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst29|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst28|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst3                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst3                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst2                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst1                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst27|inst1                                                                  ; out0             ;
+; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst2                                                                        ; |Lab4|SHREG8bit:instA|MUX2to1:inst26|inst2                                                                  ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst6|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst6|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst5|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst5|inst3                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst4                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst4                                                                       ; out0             ;
+; |Lab4|FADDER8bit:inst7|FA:inst1|inst3                                                                             ; |Lab4|FADDER8bit:inst7|FA:inst1|inst3                                                                       ; out0             ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a1 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[1] ; portadataout0    ;
+; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|ram_block1a4 ; |Lab4|ControlUnit:inst3|CU_ROM:inst11|altsyncram:altsyncram_component|altsyncram_cc51:auto_generated|q_a[4] ; portadataout0    ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Apr 05 15:39:10 2021
+Info: Command: quartus_sim --simulation_results_format=VWF BasicCircuits -c BasicCircuits
+Info (324025): Using vector source file "C:/Users/nikos/Desktop/skata/Lab4.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      52.75 %
+Info (328052): Number of transitions in simulation is 796
+Info (324045): Vector file BasicCircuits.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4452 megabytes
+    Info: Processing ended: Mon Apr 05 15:39:11 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

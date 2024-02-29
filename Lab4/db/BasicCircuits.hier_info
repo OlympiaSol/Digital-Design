@@ -1,0 +1,15 @@
+|Zflag
+Z <= inst.DB_MAX_OUTPUT_PORT_TYPE
+In[0] => inst5.IN0
+In[1] => inst5.IN2
+In[2] => inst5.IN1
+In[3] => inst5.IN3
+In[4] => inst5.IN5
+In[5] => inst5.IN4
+In[6] => inst5.IN6
+In[7] => inst5.IN7
+clock => inst.CLK
+SF => inst.ENA
+reset => ~NO_FANOUT~
+
+

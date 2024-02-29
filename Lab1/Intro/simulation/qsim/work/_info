@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Quartus\DigitalDesignII(4202-4089)\Intro\simulation\qsim
+vIntro
+Z1 ID`76Q3RGf?Q:`7HbYM6lg0
+Z2 VRdWEg][OPdc0J2YenE6Ni2
+Z3 dD:\Quartus\DigitalDesignII(4202-4089)\Intro\simulation\qsim
+Z4 w1614271523
+Z5 8Intro.vo
+Z6 FIntro.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@intro
+!i10b 1
+Z10 !s100 fkLT?A2JGnJXmA1zE^Aa=3
+!s85 0
+Z11 !s108 1614271525.433000
+Z12 !s107 Intro.vo|
+Z13 !s90 -work|work|Intro.vo|
+!s101 -O0
+vIntro_vlg_check_tst
+!i10b 1
+!s100 Glo>?5k3LNDOD@dPlaWIJ0
+IJYHjfK`=UFKmS0KZ7W>P>3
+VzGFfJSP363l8`1jQB@8EW1
+R3
+R4
+Z14 8Intro.vt
+Z15 FIntro.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1614271525.546000
+Z17 !s107 Intro.vt|
+Z18 !s90 -work|work|Intro.vt|
+!s101 -O0
+R8
+n@intro_vlg_check_tst
+vIntro_vlg_sample_tst
+!i10b 1
+!s100 @iIIO]mZ3KCOQz44dSMBz0
+I^0_2P?lQ=NQHU1QGbl`Mm2
+V?TIiJf9kCXQ`k56[Il]2[2
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@intro_vlg_sample_tst
+vIntro_vlg_vec_tst
+!i10b 1
+!s100 e<5;k@iTWn^L1k]?DD8P^2
+I^>8TX3TOdR^be`YEbD9lO3
+V>UgX7^a38SLMTaF7ML?A@0
+R3
+R4
+R14
+R15
+L0 154
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@intro_vlg_vec_tst

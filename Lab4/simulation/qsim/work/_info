@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\nikos\Desktop\skata\simulation\qsim
+vLab4
+Z1 !s100 [gRTMN0c>V9KIBLoW4ZU<3
+Z2 IEXmBeBWzhXJT_>a[FfzFR0
+Z3 VNo_DNl7@z@m@3OY4J0G]`2
+Z4 dC:\Users\nikos\Desktop\skata\simulation\qsim
+Z5 w1617626258
+Z6 8BasicCircuits.vo
+Z7 FBasicCircuits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|BasicCircuits.vo|
+Z10 o-work work -O0
+Z11 n@lab4
+!i10b 1
+!s85 0
+Z12 !s108 1617626258.665000
+Z13 !s107 BasicCircuits.vo|
+!s101 -O0
+vLab4_vlg_check_tst
+!i10b 1
+!s100 ea=jIQUKc];XNzFkCWn4m3
+ImiP@bLOT=G2[?BOPX@Qn81
+VH9NW]fI?cg@>^okJlEHe83
+R4
+Z14 w1617626257
+Z15 8BasicCircuits.vt
+Z16 FBasicCircuits.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z17 !s108 1617626258.753000
+Z18 !s107 BasicCircuits.vt|
+Z19 !s90 -work|work|BasicCircuits.vt|
+!s101 -O0
+R10
+n@lab4_vlg_check_tst
+vLab4_vlg_sample_tst
+!i10b 1
+!s100 Kc375Q>Sc`>R^oW7zIEzG1
+INA][5ZiIfF[_UAPhzMjZJ1
+V]9l4;K>8cmQ73gAn2TBe43
+R4
+R14
+R15
+R16
+L0 29
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+n@lab4_vlg_sample_tst
+vLab4_vlg_vec_tst
+!i10b 1
+!s100 S?n@IRNzi1Kg_nd1V3bd72
+IdbQCOLjK9_GI3^IEzURd81
+Z20 VX1DLA[nd=Lh8a=2X47N0X3
+R4
+R14
+R15
+R16
+L0 464
+R8
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R10
+Z21 n@lab4_vlg_vec_tst

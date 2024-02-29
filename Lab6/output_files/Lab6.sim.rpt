@@ -1,0 +1,298 @@
+Simulator report for Lab6
+Thu Apr 29 13:46:16 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 119 nodes    ;
+; Simulation Coverage         ;      72.03 % ;
+; Total Number of Transitions ; 765          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                   ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                      ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                       ;               ;
+; Vector input source                                                                        ; E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                        ; On            ;
+; Check outputs                                                                              ; Off                                                       ; Off           ;
+; Report simulation coverage                                                                 ; On                                                        ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                        ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                        ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                        ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                       ; Off           ;
+; Detect glitches                                                                            ; Off                                                       ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                       ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                       ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                       ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                       ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                        ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                       ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                       ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                      ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      72.03 % ;
+; Total nodes checked                                 ; 119          ;
+; Total output ports checked                          ; 118          ;
+; Total output ports with complete 1/0-value coverage ; 85           ;
+; Total output ports with no 1/0-value coverage       ; 18           ;
+; Total output ports with no 1-value coverage         ; 26           ;
+; Total output ports with no 0-value coverage         ; 25           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                          ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |Multiplier|comb~1                      ; |Multiplier|comb~1                      ; out0             ;
+; |Multiplier|comb~3                      ; |Multiplier|comb~3                      ; out0             ;
+; |Multiplier|CLK                         ; |Multiplier|CLK                         ; out              ;
+; |Multiplier|SI                          ; |Multiplier|SI                          ; out              ;
+; |Multiplier|A_OUT[0]                    ; |Multiplier|A_OUT[0]                    ; pin_out          ;
+; |Multiplier|A_OUT[1]                    ; |Multiplier|A_OUT[1]                    ; pin_out          ;
+; |Multiplier|A_OUT[2]                    ; |Multiplier|A_OUT[2]                    ; pin_out          ;
+; |Multiplier|A_OUT[3]                    ; |Multiplier|A_OUT[3]                    ; pin_out          ;
+; |Multiplier|B_OUT[0]                    ; |Multiplier|B_OUT[0]                    ; pin_out          ;
+; |Multiplier|B_OUT[1]                    ; |Multiplier|B_OUT[1]                    ; pin_out          ;
+; |Multiplier|B_OUT[2]                    ; |Multiplier|B_OUT[2]                    ; pin_out          ;
+; |Multiplier|B_OUT[3]                    ; |Multiplier|B_OUT[3]                    ; pin_out          ;
+; |Multiplier|L_OUT[3]                    ; |Multiplier|L_OUT[3]                    ; pin_out          ;
+; |Multiplier|H_OUT[0]                    ; |Multiplier|H_OUT[0]                    ; pin_out          ;
+; |Multiplier|H_OUT[1]                    ; |Multiplier|H_OUT[1]                    ; pin_out          ;
+; |Multiplier|H_OUT[2]                    ; |Multiplier|H_OUT[2]                    ; pin_out          ;
+; |Multiplier|H_OUT[3]                    ; |Multiplier|H_OUT[3]                    ; pin_out          ;
+; |Multiplier|CtrlLogic:U_CTL|count[3]    ; |Multiplier|CtrlLogic:U_CTL|count[3]    ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|count[2]    ; |Multiplier|CtrlLogic:U_CTL|count[2]    ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|count[1]    ; |Multiplier|CtrlLogic:U_CTL|count[1]    ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|state~1     ; |Multiplier|CtrlLogic:U_CTL|state~1     ; out              ;
+; |Multiplier|CtrlLogic:U_CTL|state~2     ; |Multiplier|CtrlLogic:U_CTL|state~2     ; out              ;
+; |Multiplier|CtrlLogic:U_CTL|state.ADD   ; |Multiplier|CtrlLogic:U_CTL|state.ADD   ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|state.SHIFT ; |Multiplier|CtrlLogic:U_CTL|state.SHIFT ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|EN_B        ; |Multiplier|CtrlLogic:U_CTL|EN_B        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|SL_B        ; |Multiplier|CtrlLogic:U_CTL|SL_B        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|EN_H        ; |Multiplier|CtrlLogic:U_CTL|EN_H        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|state~4     ; |Multiplier|CtrlLogic:U_CTL|state~4     ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|EN_C        ; |Multiplier|CtrlLogic:U_CTL|EN_C        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|SL_L        ; |Multiplier|CtrlLogic:U_CTL|SL_L        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|state~17    ; |Multiplier|CtrlLogic:U_CTL|state~17    ; out0             ;
+; |Multiplier|Reg:R_L|F~0                 ; |Multiplier|Reg:R_L|F~0                 ; out              ;
+; |Multiplier|Reg:R_L|F~1                 ; |Multiplier|Reg:R_L|F~1                 ; out              ;
+; |Multiplier|Reg:R_L|F~2                 ; |Multiplier|Reg:R_L|F~2                 ; out              ;
+; |Multiplier|Reg:R_L|F[3]                ; |Multiplier|Reg:R_L|F[3]                ; regout           ;
+; |Multiplier|Reg:R_H|F~0                 ; |Multiplier|Reg:R_H|F~0                 ; out              ;
+; |Multiplier|Reg:R_H|F~1                 ; |Multiplier|Reg:R_H|F~1                 ; out              ;
+; |Multiplier|Reg:R_H|F~2                 ; |Multiplier|Reg:R_H|F~2                 ; out              ;
+; |Multiplier|Reg:R_H|F~3                 ; |Multiplier|Reg:R_H|F~3                 ; out              ;
+; |Multiplier|Reg:R_H|F[3]                ; |Multiplier|Reg:R_H|F[3]                ; regout           ;
+; |Multiplier|Reg:R_H|F[2]                ; |Multiplier|Reg:R_H|F[2]                ; regout           ;
+; |Multiplier|Reg:R_H|F[1]                ; |Multiplier|Reg:R_H|F[1]                ; regout           ;
+; |Multiplier|Reg:R_H|F[0]                ; |Multiplier|Reg:R_H|F[0]                ; regout           ;
+; |Multiplier|Reg:R_B|F~0                 ; |Multiplier|Reg:R_B|F~0                 ; out              ;
+; |Multiplier|Reg:R_B|F~1                 ; |Multiplier|Reg:R_B|F~1                 ; out              ;
+; |Multiplier|Reg:R_B|F~2                 ; |Multiplier|Reg:R_B|F~2                 ; out              ;
+; |Multiplier|Reg:R_B|F~3                 ; |Multiplier|Reg:R_B|F~3                 ; out              ;
+; |Multiplier|Reg:R_B|F[3]                ; |Multiplier|Reg:R_B|F[3]                ; regout           ;
+; |Multiplier|Reg:R_B|F[2]                ; |Multiplier|Reg:R_B|F[2]                ; regout           ;
+; |Multiplier|Reg:R_B|F[1]                ; |Multiplier|Reg:R_B|F[1]                ; regout           ;
+; |Multiplier|Reg:R_B|F[0]                ; |Multiplier|Reg:R_B|F[0]                ; regout           ;
+; |Multiplier|Reg:R_A|F~0                 ; |Multiplier|Reg:R_A|F~0                 ; out              ;
+; |Multiplier|Reg:R_A|F~1                 ; |Multiplier|Reg:R_A|F~1                 ; out              ;
+; |Multiplier|Reg:R_A|F~2                 ; |Multiplier|Reg:R_A|F~2                 ; out              ;
+; |Multiplier|Reg:R_A|F~3                 ; |Multiplier|Reg:R_A|F~3                 ; out              ;
+; |Multiplier|Reg:R_A|F[3]                ; |Multiplier|Reg:R_A|F[3]                ; regout           ;
+; |Multiplier|Reg:R_A|F[2]                ; |Multiplier|Reg:R_A|F[2]                ; regout           ;
+; |Multiplier|Reg:R_A|F[1]                ; |Multiplier|Reg:R_A|F[1]                ; regout           ;
+; |Multiplier|Reg:R_A|F[0]                ; |Multiplier|Reg:R_A|F[0]                ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|Selector1~0 ; |Multiplier|CtrlLogic:U_CTL|Selector1~0 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector1~2 ; |Multiplier|CtrlLogic:U_CTL|Selector1~2 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector1~3 ; |Multiplier|CtrlLogic:U_CTL|Selector1~3 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector2~0 ; |Multiplier|CtrlLogic:U_CTL|Selector2~0 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector3~1 ; |Multiplier|CtrlLogic:U_CTL|Selector3~1 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~0      ; |Multiplier|CtrlLogic:U_CTL|Add0~0      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~1      ; |Multiplier|CtrlLogic:U_CTL|Add0~1      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~2      ; |Multiplier|CtrlLogic:U_CTL|Add0~2      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~3      ; |Multiplier|CtrlLogic:U_CTL|Add0~3      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~4      ; |Multiplier|CtrlLogic:U_CTL|Add0~4      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~5      ; |Multiplier|CtrlLogic:U_CTL|Add0~5      ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Add0~6      ; |Multiplier|CtrlLogic:U_CTL|Add0~6      ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~0          ; |Multiplier|Adder:U_ADD|Add0~0          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~2          ; |Multiplier|Adder:U_ADD|Add0~2          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~3          ; |Multiplier|Adder:U_ADD|Add0~3          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~5          ; |Multiplier|Adder:U_ADD|Add0~5          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~7          ; |Multiplier|Adder:U_ADD|Add0~7          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~8          ; |Multiplier|Adder:U_ADD|Add0~8          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~9          ; |Multiplier|Adder:U_ADD|Add0~9          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~12         ; |Multiplier|Adder:U_ADD|Add0~12         ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~13         ; |Multiplier|Adder:U_ADD|Add0~13         ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~14         ; |Multiplier|Adder:U_ADD|Add0~14         ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~15         ; |Multiplier|Adder:U_ADD|Add0~15         ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~16         ; |Multiplier|Adder:U_ADD|Add0~16         ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Equal0~0    ; |Multiplier|CtrlLogic:U_CTL|Equal0~0    ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Equal1~0    ; |Multiplier|CtrlLogic:U_CTL|Equal1~0    ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                             ;
++-----------------------------------------+-----------------------------------------+------------------+
+; Node Name                               ; Output Port Name                        ; Output Port Type ;
++-----------------------------------------+-----------------------------------------+------------------+
+; |Multiplier|comb~0                      ; |Multiplier|comb~0                      ; out0             ;
+; |Multiplier|comb~2                      ; |Multiplier|comb~2                      ; out0             ;
+; |Multiplier|RST                         ; |Multiplier|RST                         ; out              ;
+; |Multiplier|L_OUT[0]                    ; |Multiplier|L_OUT[0]                    ; pin_out          ;
+; |Multiplier|L_OUT[1]                    ; |Multiplier|L_OUT[1]                    ; pin_out          ;
+; |Multiplier|CtrlLogic:U_CTL|state~0     ; |Multiplier|CtrlLogic:U_CTL|state~0     ; out              ;
+; |Multiplier|CtrlLogic:U_CTL|state.LOAD  ; |Multiplier|CtrlLogic:U_CTL|state.LOAD  ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|state~5     ; |Multiplier|CtrlLogic:U_CTL|state~5     ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|SL_A        ; |Multiplier|CtrlLogic:U_CTL|SL_A        ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|state~21    ; |Multiplier|CtrlLogic:U_CTL|state~21    ; out0             ;
+; |Multiplier|Reg:R_L|F~3                 ; |Multiplier|Reg:R_L|F~3                 ; out              ;
+; |Multiplier|Reg:R_L|F[1]                ; |Multiplier|Reg:R_L|F[1]                ; regout           ;
+; |Multiplier|Reg:R_L|F[0]                ; |Multiplier|Reg:R_L|F[0]                ; regout           ;
+; |Multiplier|Reg:R_C|F[0]                ; |Multiplier|Reg:R_C|F[0]                ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|Selector0~0 ; |Multiplier|CtrlLogic:U_CTL|Selector0~0 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector0~1 ; |Multiplier|CtrlLogic:U_CTL|Selector0~1 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector0~2 ; |Multiplier|CtrlLogic:U_CTL|Selector0~2 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector1~1 ; |Multiplier|CtrlLogic:U_CTL|Selector1~1 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector2~1 ; |Multiplier|CtrlLogic:U_CTL|Selector2~1 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector2~2 ; |Multiplier|CtrlLogic:U_CTL|Selector2~2 ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector3~2 ; |Multiplier|CtrlLogic:U_CTL|Selector3~2 ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~1          ; |Multiplier|Adder:U_ADD|Add0~1          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~4          ; |Multiplier|Adder:U_ADD|Add0~4          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~6          ; |Multiplier|Adder:U_ADD|Add0~6          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~10         ; |Multiplier|Adder:U_ADD|Add0~10         ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~11         ; |Multiplier|Adder:U_ADD|Add0~11         ; out0             ;
++-----------------------------------------+-----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |Multiplier|comb~0                       ; |Multiplier|comb~0                       ; out0             ;
+; |Multiplier|comb~2                       ; |Multiplier|comb~2                       ; out0             ;
+; |Multiplier|L_OUT[0]                     ; |Multiplier|L_OUT[0]                     ; pin_out          ;
+; |Multiplier|L_OUT[1]                     ; |Multiplier|L_OUT[1]                     ; pin_out          ;
+; |Multiplier|L_OUT[2]                     ; |Multiplier|L_OUT[2]                     ; pin_out          ;
+; |Multiplier|CtrlLogic:U_CTL|count[4]     ; |Multiplier|CtrlLogic:U_CTL|count[4]     ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|state~3      ; |Multiplier|CtrlLogic:U_CTL|state~3      ; out              ;
+; |Multiplier|CtrlLogic:U_CTL|state.FINISH ; |Multiplier|CtrlLogic:U_CTL|state.FINISH ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|state~13     ; |Multiplier|CtrlLogic:U_CTL|state~13     ; out0             ;
+; |Multiplier|Reg:R_L|F~3                  ; |Multiplier|Reg:R_L|F~3                  ; out              ;
+; |Multiplier|Reg:R_L|F[2]                 ; |Multiplier|Reg:R_L|F[2]                 ; regout           ;
+; |Multiplier|Reg:R_L|F[1]                 ; |Multiplier|Reg:R_L|F[1]                 ; regout           ;
+; |Multiplier|Reg:R_L|F[0]                 ; |Multiplier|Reg:R_L|F[0]                 ; regout           ;
+; |Multiplier|Reg:R_C|F[0]                 ; |Multiplier|Reg:R_C|F[0]                 ; regout           ;
+; |Multiplier|CtrlLogic:U_CTL|Selector0~1  ; |Multiplier|CtrlLogic:U_CTL|Selector0~1  ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector1~1  ; |Multiplier|CtrlLogic:U_CTL|Selector1~1  ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector2~1  ; |Multiplier|CtrlLogic:U_CTL|Selector2~1  ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector2~2  ; |Multiplier|CtrlLogic:U_CTL|Selector2~2  ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector3~0  ; |Multiplier|CtrlLogic:U_CTL|Selector3~0  ; out0             ;
+; |Multiplier|CtrlLogic:U_CTL|Selector3~2  ; |Multiplier|CtrlLogic:U_CTL|Selector3~2  ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~1           ; |Multiplier|Adder:U_ADD|Add0~1           ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~4           ; |Multiplier|Adder:U_ADD|Add0~4           ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~6           ; |Multiplier|Adder:U_ADD|Add0~6           ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~10          ; |Multiplier|Adder:U_ADD|Add0~10          ; out0             ;
+; |Multiplier|Adder:U_ADD|Add0~11          ; |Multiplier|Adder:U_ADD|Add0~11          ; out0             ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Apr 29 13:46:16 2021
+Info: Command: quartus_sim --simulation_results_format=VWF Lab6 -c Lab6
+Info (324025): Using vector source file "E:/Quartus/DigitalDesignII(4202-4089)/Lab6/Multiplier.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      72.03 %
+Info (328052): Number of transitions in simulation is 765
+Info (324045): Vector file Lab6.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4440 megabytes
+    Info: Processing ended: Thu Apr 29 13:46:16 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

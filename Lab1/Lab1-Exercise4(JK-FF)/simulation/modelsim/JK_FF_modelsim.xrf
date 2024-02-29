@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Lab1-Exercise4(JK-FF)/JK_FF.bdf
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Lab1-Exercise4(JK-FF)/Waveform.vwf
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Lab1-Exercise4(JK-FF)/Waveform1.vwf
+source_file = 1, D:/Quartus/DigitalDesignII(4202-4089)/Lab1-Exercise4(JK-FF)/db/JK_FF.cbx.xml
+design_name = JK_FF
+instance = comp, \K~I , K, JK_FF, 1
+instance = comp, \CLK~I , CLK, JK_FF, 1
+instance = comp, \CLR~I , CLR, JK_FF, 1
+instance = comp, \SET~I , SET, JK_FF, 1
+instance = comp, \inst~1 , inst~1, JK_FF, 1
+instance = comp, \J~I , J, JK_FF, 1
+instance = comp, \inst~3 , inst~3, JK_FF, 1
+instance = comp, \inst~0 , inst~0, JK_FF, 1
+instance = comp, \inst~_emulated , inst~_emulated, JK_FF, 1
+instance = comp, \inst~2 , inst~2, JK_FF, 1
+instance = comp, \Q~I , Q, JK_FF, 1

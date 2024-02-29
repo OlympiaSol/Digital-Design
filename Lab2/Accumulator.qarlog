@@ -1,0 +1,21 @@
+Quartus II Archive log --	E:/Quartus/DigitalDesignII(4202-4089)/Lab2/Accumulator.qarlog
+
+Archive:	E:/Quartus/DigitalDesignII(4202-4089)/Lab2/Accumulator.qar
+Date:		Sun Mar 28 16:00:37 2021
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/8bitAdder.bdf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/AccWaveform.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/Accumulator.bdf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/FA.bdf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/FA.vwf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/HA.bdf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/Lab2.qpf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/Lab2.qsf
+E:/Quartus/DigitalDesignII(4202-4089)/Lab2/incremental_db/compiled_partitions/Lab2.db_info
+e:/quartus/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 10 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

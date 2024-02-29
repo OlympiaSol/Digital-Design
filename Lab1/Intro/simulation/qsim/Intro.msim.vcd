@@ -1,0 +1,78 @@
+$comment
+	File created using the following command:
+		vcd file Intro.msim.vcd -direction
+$end
+$date
+	Thu Feb 25 18:45:26 2021
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Intro_vlg_vec_tst $end
+$var reg 1 ! PB1 $end
+$var reg 1 " PB2 $end
+$var wire 1 # LED $end
+$var wire 1 $ sampler $end
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + PB2~combout $end
+$var wire 1 , PB1~combout $end
+$var wire 1 - inst4~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+x#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+x-
+$end
+#4897
+1-
+#9816
+1#
+#50000
+1!
+0$
+#50862
+1,
+#100000
+1"
+0!
+1$
+#100842
+1+
+#100862
+0,
+#105739
+0-
+#106101
+1-
+#150000
+1!
+0$
+#150862
+1,
+#156101
+0-
+#161020
+0#
+#200000

@@ -1,0 +1,6 @@
+entity CtrlLogic is
+generic ( n: integer := 4 );
+port ( Rst, CLK : in std_logic;
+SL_A, SL_B, SL_H, SL_L, SL_C: out std_logic;
+EN_A, EN_B, EN_H, EN_L, EN_C: out std_logic );
+end CtrlLogic;
